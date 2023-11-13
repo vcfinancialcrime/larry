@@ -1,0 +1,2101 @@
+<head>
+	<META NAME="robots" CONTENT="noindex,nofollow">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  }
+p {
+  font-family: Arial, sans-serif;
+  line-height: 180%;
+  }
+ol {
+  font-family: Arial, sans-serif;
+  list-style-type: decimal-leading-zero;
+  line-height: 150%;
+  }
+ol.sections {
+  font-family: Arial, sans-serif;
+  list-style-type: upper-alpha;
+  line-height: 180%;
+  }
+ol.timeline {
+  font-family: Arial, sans-serif;
+  /*list-style-type: decimal-leading-zero;*/
+  max-width: 100%;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 40px;
+  }
+ol.timeline li {
+  margin: 0 0 0.5rem 0; 
+  counter-increment: my-awesome-counter;
+  position: relative;ter-increment: my-awesome-counter;
+}
+ol.timeline li::before {
+  content: counter(my-awesome-counter);
+  color: #EBEDEF;
+  font-size: 1.0rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 30px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  transform: rotate(-10deg);
+  background: #34495E;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px 0 #999;
+}
+ol.email {
+  font-family: Arial, sans-serif;
+  list-style-type: decimal-leading-zero;
+  line-height: 180%;
+  }
+ol.audio {
+  font-family: Arial, sans-serif;
+  list-style-type: decimal-leading-zero;
+  }
+ul {
+  font-family: Arial, sans-serif;
+  list-style-type: circle;
+  line-height: 180%;
+  }
+h1 {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  text-align: left;
+  font-size: 30px;
+  }
+h2 {
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: left;
+  background: #34495E;
+  color: #EBEDEF;
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-top: 45px;
+  }
+  h3 {
+  margin-top: 45px;
+  }
+  table, th, td {
+  border: 1px solid #EAECEE;
+  border-collapse: collapse;
+  }
+th, td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  }
+p.audiotext {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    color: #1B4F72;
+    /*font-size: 14px;*/
+  }
+p.audiocomment {
+    font-family: Arial, sans-serif;
+    color: #117A65;
+    /*font-size: 14px;*/
+  }
+p.quote {
+    font-family: Arial, sans-serif;
+    background: #FADBD8;
+    /*font-size: 14px;*/
+    padding: 15px;
+    color: #A93226;
+    border-left: 8px solid #A93226;
+    width: 30%;
+    margin: 30px;
+  }
+p.imagetext {
+    font-family: Arial, sans-serif;
+    background:  #d6dbdf;
+    /*font-size: 14px;*/
+    width: 60%;
+    padding: 10px;
+    margin-left: 20%;
+    color:  #17202a;
+    border-left: 8px solid  #17202a;
+  }
+.law {
+    font-family: Arial, sans-serif;
+    font-style: bold;
+    background: #A9CCE3;
+    /*font-size: 14px;*/
+    padding: 5px;
+    color: #000000;
+    border-left: 8px solid #154360;
+    width: 70%;
+  }
+  .notouch {
+    font-family: Arial, sans-serif;
+    font-style: bold;
+    background: #FADBD8;
+    /*font-size: 14px;*/
+    padding: 5px;
+    color: #000000;
+    border-left: 8px solid #A93226;
+    width: 70%;
+  }
+.legalcode {
+    font-family: Arial, sans-serif;
+    margin: 15px;
+    background: #A9CCE3;
+    /*font-size: 14px;*/
+    padding: 10px;
+    color: #000000;
+    border-left: 8px solid #154360;
+    margin: 20px;
+  }   
+p.legalcode {
+    border: none;
+    }
+h2.legalcode {
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    }
+h3.legalcode {
+    border: none;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    }
+ul.legalcode {
+    border: none;
+    line-height: 180%;
+    list-style-type: none;
+    margin-right: 10px;
+    padding: 0px;
+    }
+.indent {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+#shopday {
+    color: #1B4F72;
+    background-color: #fcf3cf;
+}
+#mark {
+    color: #1B4F72;
+    background-color: #fcf3cf;
+}
+#important {
+    color:  #784212;
+    background-color:  #f5b7b1;
+}
+#sectionnote {
+    color: #1B4F72;
+    background-color: #fcf3cf;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 150%;
+}
+
+.dearviewer {
+    color:  #145a32 ;
+    background-color: #abebc6;
+    font-size: 14px;
+    /*font-weight: bold;*/
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 150%;
+    border-left: 8px solid #145a32;
+    width: 70%;
+    text-align: left;
+}
+.lastemail {
+    font-family: Arial, sans-serif;
+    background:  #d2b4de;
+    /*font-size: 14px;*/
+    padding: 15px;
+    color:  #512e5f;
+    border-left: 8px solid  #512e5f;
+    width: 70%;
+    margin: 30px;
+    text-align: left;
+  } 
+#breakinnarrative {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color:  #566573;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+#breakinheader {
+    color:  #784212;
+    background-color:  #f8c471;
+}
+#related {
+    color:  #784212;
+    background-color:  #f5b7b1;
+}
+#damages {
+    background-color:  #3498DB;
+}
+table.damages {
+  border: 1px solid;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+XXtable.damages {
+  border: 1px solid;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+
+
+</style>
+</head>
+
+<a name="top"></a>
+<center><h1>DTPA & INSURANCE FRAUD SUPPORT MATERIAL</h1></center>
+<p></p>
+
+<p></p>
+
+<center>
+<div class="dearviewer">
+  <p></p>
+<p><b>NOTE:</b></p>
+
+<p>I do believe that Black Forest Werkshop is in violation of a several portions of the DTPA including, possible insurance fraud. I believe I have ample evidence to support not only my claims of how Black Forest Werkshop failed to repair my own car and the emotional toll dealing with his shop took on me, but also how he attempted to exploit me and my circumstances to commit insurance fraud. I also believe I have enough supporting evidence to show that the owner of Black Forest Werkshop repeatedly engages in false, deceptive, and misleading business practices in an attempt to convince or coerce (and even recruit and pay) his customers to act as agents on his behalf to help him extort additional funding from insurance agencies. The questionable way Black Forest Werkshop operates seems to be habitual and systemic in nature.</p>
+
+<p>In researching how to properly report insurance fraud, I came accross <a href="https://www.nicb.org/news/blog/man-ordered-repay-nearly-5-million-restitution" target="_blank">this article</a> on the National Insurance Crime Bureau's website (NICB). From my vantage point, the difference between the man in this article and Lee Rector is that Lee's modus operandi is more covert. Lee seems to fully understand the value of amassing wealth through small transactions over time by leveraging the high cost of luxury vehicle replacement parts in conjunction with capitalising on the perceived sterotypes of wealth and vanity often associated with consumers who tend to own expensive luxury vehicles like BMW, Porsche, Mercedes, and Mini (the brands Black Forest Werkshop specializes in). Lee lies/exagerates the need for parts and labor and also seems habitually prone to initially producing low-quality repair work as part of a tactic to convince customers/insurance to pay him a second time to redo the same job "correctly" rather than the more overt act of stagging accidents. Both men seem to groom, recruit, and incentive their customers to help them extort undue financial gains.</p> 
+
+<p>I feel I may lack the ability to sufficiently explain just how stressful my business transaction was with Black Forest Werkshop has been for me. Lee Rector's way of taking advantage of customers and insurance companies seems to be a pattern and I really don't want more people to have to go through what I went through. The way Lee Rector conducts business does not seem fair or legal. It really was a nightmare for me, and in some ways still is because my car wasn't sufficiently repaired. I took the time to report Black Forest Werkshop for the proper government authorities because I truly believe that his shop should be investigated by the appropriate insurance fraud authorities. I am just way out of my league and really do need some help with this. </p>
+
+<p>I began trying to organize the information I had into some deliverable method. I'm a web developer so creating a website to catalog everything just seemed a natural and comfortable way for me to attempt to go about my task. However, the more time I spend trying to organize my experiences and present my material the more connections and details I find to support my concerns. For example, <a href="https://dtpa.github.io/lawsuit/audio/recruiting-grooming-paying-customers-to-assist-in-insurance-fraud.mp3" target="_blank">listen to this two minute audio clip</a>. He tried many of these same tactics with me, and regardless of the context of the conversation, it is scary to deal with someone who can so casually discuss with his customer's the idea of excercising his mechanic's lien rights to sell our cars as a ploy to extort additional funds from insurance companies. Rather or not he ever does such a thing doesn't really matter. His ease in so casually vocalizing the idea is scary to customers like me - Lee has the keys to our cars which he stores behind a locked gate.</p>
+
+
+<p>I really do want to go follow through with my plans the right way, and I am afraid that you might simply view me as a frivilous person. Please help me move forward with this case the best way possible.</p>
+
+<p>Jaden Riley</p>
+</div>
+</center>
+
+  
+<h1>Sections</h1>
+  <ol class="sections">
+    <li><a href="#narrative">Narrative</a></li>
+    <li><a href="#concerns">Primary Concerns</a></li>
+    <li><a href="#dtpa">Texas Deceptive Trade Practices Act (DTPA)</a></li>
+    <li><a href="#timeline">Timeline (not exhaustive)</a></li>
+    <li><a href="#audio">Audio Recordings</a></li>
+    <li><a href="#photos">Photos</a></li>
+    <li><a href="#documents">Scanned Documents (and Official BMW of South Austin "Walk Around Video")</a></li>
+    <li><a href="#email">Email</a></li>
+    <li><a href="#phone">People, Organizations, and Phone Records</a></li>
+    <li><a href="#criminaljustice">Criminal Justice Pursuit</a></li>
+    <li><a href="#civiljustice">Civil Justice Pursuit</a></li>
+    <li><a href="#damages">Damage Calculations</a></li>
+    <li><a href="#misc">Miscellaneous</a></li>
+</ol>
+
+<p><br></p>
+<h2><a name="narrative">Section A: Narrative</a></h2>
+
+<h3>Narrative</h3>
+
+<div class="indent">
+  
+<p>My car was hit multiple times in separate accidents in the second half of August. No one was injured. My vehicle suffered physical body damage to the front and rear bumpers visible to the naked eye and the driver's side headlight. The headlight was cracked and produced a low light level, but it still worked. Both front fog lights worked and appeared undamaged to the naked eye.</p>
+
+<p>My current vehicle is my first "luxury" car. I've spoken with car dealers, mechanics, and other BMW owners about correctly maintaining and caring for my vehicle. These discussions always leave me feeling apprehensive about what to expect regarding service and repairs. Convinced that it was in my best interest to find an established repair shop specializing in BMW, I searched for one. Someone recommended that I consider Black Forest Werkshop, the "repair shop." Black Forest Werkshop specializes in BMW, Porche, Mini, and Mercedes.</p>
+
+<p>Before choosing to do business with Black Forest Werkshop, I drove to the repair shop and spoke with the owner, Lee Rector. Lee and I surveyed the physical damage to my car. Lee turned my car on and looked under the hood to inspect how extensive the damage was. We spent more than an hour talking about the unique challenges of adequately caring for BMWs and covered various other BMW-focused topics ranging from regular maintenance to the customizations BMW enthusiasts liked to make to their cars and even engine rebuilds. I felt confident that Lee knew BMWs well and would take good care of my car and me. We then talked about filing with the insurance company and the possibility of me buying my replacement parts for him to install.</p>
+
+<p>We briefly discussed some of his negative social media reviews. Lee responded that either the quality of work the customer was expecting was not possible because the repair work was completed with non-OEM parts or that while working on these customers' cars, his technicians discovered other issues that needed attention. Lee said that when he tried to explain how to resolve his customer's post-repair concerns by explaining the situation and the need for additional work, these customers declined and later left negative reviews. Lee said he would continue to reach out and work with these individuals, but some people would not listen or couldn't be pleased. And, having worked in the service industry myself, I agreed. In hindsight, I see similarities between these customers' complaints and my own experience with Lee and Black Forest Werkshop. </p>
+
+<p>While discussing BMW customizations, I asked Lee if he would repair my car with darker colored parts. I told him that I wanted to replace the grey-colored grill with a black grill. Since my headlight needed to be replaced, I asked if Lee would order darker, smokey colored headlights instead of the standard clear factory colored headlights my car currently had. Lee said that OEM parts were preferred and that BMW did not sell the darker pieces I wanted. I asked him if there were other ways he could get the color parts I wanted. Lee said there were, but he did not have time to look for specialized components. </p>
+
+<p>After talking more about the specific parts and repairs needed for my car, I told Lee that I did not mind doing the work to locate and purchase the particular components I wanted on my own. I asked Lee if I searched for and purchased the parts I wanted him to use to repair my car on my own, would he use them? He said sure that it would not be a problem, that he had requests like that before, and that he had charge for labor. He advised me to make sure the parts I purchased fit my car. We had already discussed that the best way to do that was to call the BMW Dealership and give them my VIN to get the proper replacement part numbers for my car and use that information to buy the correct replacement parts.</p>
+
+<p>I was not happy that my car was damaged and needed repair work, but I was trying to make the best of my situation, and I was starting to get excited with how my car would look with the darker pieces. I felt grateful to have found someone like Lee, who did not seem to mind taking time out of his day to answer all of my questions and teach me about my car. Lee had strong, often negative, opinions on working with insurance companies but seemed to love his job and work with customers. I told Lee I would drop my vehicle off at Black Forest Werkshop to begin the repair process after acquiring the replacement parts.</p>
+
+<p>The insurance company approved a rental car for me and explained my next steps to me, which were to pick up my rental and notify them when I dropped my car off at the repair shop. They said that my claims were in the system and had been started. My insurance company advised that the repairs be should be done as soon as possible but that I did not have to drop my car off at the repair shop immediately, which worked out best for me because I was still trying to decide which parts to use for my car repairs. </p>
+
+<p>I called the BMW dealership, gave them my VIN, and needed parts. The BMW dealership's parts counter agent provided me with the OEM part numbers, which I then used to buy the 'direct OEM aftermarket replacement parts' I delivered to Lee and Black Forest Autowerks to repair my vehicle. </p>
+
+<ul>
+    <li>Left Fog lamp bezel w/chrome insert, OEM part number 51117255369 ("fog light trim")</li>
+    <li>Right reflector, OEM part number 63147274522</li>
+    <li>Left reflector, OEM part number 63147274521</li>
+    <li>Emblem, OEM part number 51767288752</li>
+    <li>Left Headlamp housing, OEM part number 63117338709</li>
+    <li>Bumper cover 328i, w/o trim lines w/o park sensor, OEM part number 51127312725</li>
+</ul>
+
+<p>Black Forest Werkshop had my car for 84 days to complete a repair that my insurance company and other industry professionals estimated should take 2-5 days of actual work to complete once all of the necessary parts were available. I expected that the work I had done by providing the repair shop with the parts would help expedite the process. </p>
+
+
+<p>On 11/17/2021, two weeks after the second insurance assessment and 54 days after having dropped my car off at your shop, Lee sent me an email stating that the total cost "will be $825 from [me] once it's done" and requested my approval to begin work on my car to which I consented.</p>
+
+<p>On 12/17/2021, 84 days after dropping my car off for repairs, I called and spoke with Lee. Lee said that my car was ready for pick-up and that the amount due was $2051.16, two and a half times more than the $825 we agreed to. When I arrived at Black Forest Werkshop later that day to pick up my car, you told me that the $2051.16 you quoted to me over the phone a few hours prior was incorrect and requested payment from me of $2268.46 (274%+ more expensive than his original $825 quote).</p>
+
+<p>From 11/17/2021 to 12/17/2021, I participated in 60 different phone calls in my attempts to receive updates from Black Forest Werkshop about the status of my car and work with the insurance company to negotiate the extension of my car rental. Most of my calls to Black Forest Werkshop were either not returned or consisted of me receiving reasons why my vehicle was still not ready for pick up. About two weeks before picking up my car Black Forest Werkshop told me repeatedly that my final invoice still had not been calculated. Both Lee Rector and his administrative attendant, Josh, said to me over those two weeks that they were still working to finalize the cost of my repairs when I was under the impression that $825 was the amount due. I was unsure why the price would change after Lee quoted me the $825, which was provided after StateFarm had completed two different on-site appraisals/repair estimates for my car.</p>
+
+<ul>
+    <li>13 phone calls to/from Black Forest Werkshop</li>
+    <li>41 phone calls to/from insurance agents (from StateFarm and Bristol-West Insurance)</li>
+    <li>06 calls to/from Enterprise Rental</li>
+    <li>01 calls to Austin Police Department + an hour long conversation with a police officer (<a href="#police1">&#8224;</a>) (<a href="#police2">&#8225;</a>)</li>
+</ul>
+
+
+<p>On 12/17/2021, when I arrived to pick up my vehicle, I was surprised at the condition of my "repaired" vehicle:</p>
+
+<ul>
+    <li>both the front and rear of the car still looked like they had been in an accident</li>
+    <li>parts were missing from the front bumper</li>
+    <li>parts that I had purchased to be used for the repair were not used</li>
+    <li>no repair work was done on the rear bumper</li>
+    <li>there were new electrical issues that did not exist when I dropped my car off the repair </li>
+    <li>the bodywork that was of deficient quality (it looked messy, bumpy, chipped, uneven, and rushed)</li>
+    <li>the interior driver's seat leather was covered in dark soot </li>
+</ul>
+
+<p>Lee seemed pleased with the results and offered multiple times to let me drive off the lot with my car in the state he presented.</p>
+</div>
+
+<p><br></p>
+<h2><a name="concerns">Section B: Primary Concerns</a></h2>
+
+<div class="indent">
+<ul>
+  <li>Misrepresents the work that has been need and/or completed.</li>
+  <li>Gives estimate as to the cost of repairs then charges a higher price; 274+% from initial estimate.</li>
+  <li>Repeatedly promises that repair services will be completed by a certain day then fails to have the repair services completed by that day and fails to take any responsibility for the impact of their repeat negligence; things have been taken grossly out of hand.  See "Timeline" numbers #18, #21, #22, #23, #24, #25, #26, #32, #33, #34, #35, #36, #37, #38, #39, and #42.</li>
+  <li>Failure to notify customers and remove charges for work that was expected to be completed but that was not completed when the incomplete work was included as part of the initial agreement.</li>
+  <li>Billing customers twice for the same part and/or service. </li>
+  <li>Promising to provide a particular service to earn my business and then failing to deliver.</li>
+  <li>Abuses his priviledges to excercise mechanic lien as a method to extort additional undeserved money rather than honoring the spirit of the law which is suppossed to protect his right to collect payment for living up to his half of a contractual obligation.</li>
+  <li>Intentionally produces poor quality results with the aim of convincing/coercing customers and insurance companies to pay to have the same work completed multiple times. </li>
+  <li>Operates as a body repair shop and negotiates payments, services, and completion dates for body repair work without having the resources/ability to perform those vbody repair services or have any authority to schedule/prioritize workloads (a.k.a. if Lee outsources all body repair services to other companies it is those other companies who posses the power to determine which vehicles get worked on and when; these companies, like all companies, will naturally prioritize their direct clients over indirect/outsourced third party customers).</li>
+  <li>Salvages used parts from previous repair jobs and sells them to as replacement parts for 130% of their true market value. Lee has a close relationship with one man, Russell, who deals in vehicle salvage parts and appears to regularly do business with him. Lee speaks of Russell often, and even recommends/refers/encourages customers like me to do business directly with Russell by giving out his phone number (so we can buy parts from Russell or sell him our spare parts).</li> 
+  <li>Intentionally causes exhorbant delays to the onset and completion of service/repair work to the sole betterment of his own financial interests and in complete disregard to the needs, lives, and circumstances of his customers.</li>
+  <li>I do not think Black Forest Werkshop replaced my aluminum bumper reinforcement, the part I believe Lee Rector received a direct insurance supplement payment from StateFarm through the second on-site appraisal he requested. I believe Black Forest "hammered out" my existing damaged one, as my bumper is still misshapen. Aside from that, the only replacement part Black Forest Werkshop did provide was a used driver side healight and halogen bulb. Their purchase of a driver side headlight was unecassry, as I had previously provided them with new head headlights to use to repair my car.</li>
+</ul>
+</div>
+
+<p><br></p>
+<center><a href="#top"><img src="https://dtpa.github.io/lawsuit/site/back-to-top-simple.png" width="60px" alt="back to top"></a></center>
+<h2><a name="dtpa">Section C: Texas Deceptive Trade Practices Act (DTPA)</a></h2>
+
+
+    <div id="sectionnote">
+        <center>SECTION NOTE:</center>
+    
+    <p>I am not a lawyer and I have never filed a formal grievence, fraud complaint, or sued another another person, group, or business based on my personal experiences with them. As such, the information referenced below is paraphrased and represents only the portions of the DTPA statute I believed, per my laymen's understanding of my circumstances, to be relevant in my decision to report my suspicions/allegations of insurance fraud, and other deceptive/unlawful practices by Black Forest Werkshop, to authorities and pursue legal action to help protect others from experiencing what I experienced and to recover damages.</p>
+    </div>
+
+<br><br>
+
+<div class="legalcode">
+    <br>
+<h2 class="legalcode">
+TEXAS BUSINESS AND COMMERCE CODE:<br><br>
+Deceptive Trade Practices-Consumer Protection Act<br>
+(DTPA)
+</h2>
+
+<br><br>
+<ul class="legalcode">
+
+<h3 class="legalcode">KEY TERMINOLOGY </h3>
+<p></p>
+<ul class="legalcode"></ul>
+<li>The Deceptive Trade Practices-Consumer Proctection Act defines the following key terms:
+    <ul>
+	<li>“<span id="mark">false</span>, <span id="mark">misleading</span>, or <span id="mark">deceptive</span> acts or practices in the conduct of any trade or commerce are hereby declared unlawful” </li>
+    <li>“<span id="mark">service</span>" includes work, parts, and labor furnished in connection with the repair of goods, and </li>
+    <li>“<b><span id="mark"><font color="red">unconscionable action</font></span></b>” in one that “takes advantage of the lack of knowledge, ability, experience, or capacity of a person to a grossly unfair degree.”</li>
+</ul>
+
+
+<h3 class="legalcode">
+SECTION 17.46 - DECEPTIVE TRADE PRACTICES UNLAWFUL
+</h3>
+<p></p>
+<ul class="legalcode">
+<li>(a)	False, misleading, or deceptive acts or practices in the conduct of any trade or commererce are hereby declared unlawful and are subject to action by the consumer protection division under certain sections of this code [Sections 17.47, 17.58, 17.60, and 17.61].</li>
+<li>(b)	The term “false, misleading, or deceptive acts or practices” includes, but is not limited to, the [unlawful] following acts [except as provided in Subsection (d) of this section]:
+    <p></p>
+<ul class="legalcode">
+    <li><b>The Unlawful Acts, or DTPA Violations, by Black Forest Werkshop:</b><p></p>
+        <ul class="legalcode">
+
+<li><b>(#01)	 Passing off goods or services as those of another</b><br>
+<i>It is illegal to advertise or represent goods or services under a different company than the company in which the goods were made or the services received.</li></i><br>
+
+<li><b>(#02)	 Causing confusion or misunderstanding as to the source, sponsorship, approval, or certification of goods or services</b><br>
+<i>This section prohibits acts that tend to confuse consumers. First, this section prohibits acts that tend to cause confusion regarding the source of goods or services. This section is broader than section (1) because the consumer need not prove that the defendant was actually "passing off" goods or services as those of another. Instead, all the consumer must show is that the defendant caused confusion regarding the source of the goods or services.</li></i><br>
+
+<li><b>(#03)	 Causing confusionor misunderstanding as to the affiliation, connection, or association with, or certification by, another</b><br>
+<i>This section prohibits acts or practices that cause confusion regarding the affiliation or relationship between the seller of goods or the provider of services and some other organization or person. For example, this section prohibits business owners from giving the impression that their company is closely connected with another business or with the state government or an agency of the state government.</li></i><br>
+
+
+<li><b>(#06)	 Representing that goods are original or new if they are deteriorated, reconditioned, reclaimed, used, or secondhand</b><br>
+<i>This section prohibits sellers from passing off secondhand or reconditioned goods as new. This section affects many types of goods which might be sold, used on a trial basis, returned and then sold again as "new." The Federal Trade Commission has guidelines regarding the amount of prior use that is allowed before a good can no longer be sold or advertised as "new."</li></i><br>
+
+
+<li><b>(#13)    Knowingly making false or misleading statements of fact concerning the need for parts, replacement, or repair service</b><br>
+<i>This section prohibits repairpersons from representing that certain work or parts are needed when they are not. To violate this section the repairperson must have made the misrepresentation "knowingly." This is required because there may be honest differences of opinion regarding the need for some repairs.</li></i><br>
+
+
+<li><b>(#22)   Representing that work or services have been performed on, or parts replaced in, goods when the work or services were not performed or the parts replaced</b><br>
+<i>While section (13) prohibits persons from "knowingly" making false or misleading statements concerning the need for parts, replacement, or repairs, this section requires no proof of knowledge or intent. Instead, it is illegal for a repair shop or service person to tell you that certain parts have been replaced or certain services have been performed, when they have not.</li></i><br>
+
+
+<li><b>(#24)     Failing to disclose information concerning goods or services which was known at the time of the transaction if such failure to disclose such information was intended to induce the consumer into a transaction into which the consumer would not have entered had the information been disclosed</b><br>
+<i>This section prohibits a seller from failing to disclose information known by the seller at the time of the transaction if such withholding of information is intended to induce the consumer into a transaction, and if the information is such that had the consumer known it at the time of the transaction, the consumer would not have made the purchases. </li></i><br>
+        </ul></li></ul></li></ul>
+
+<p></p>
+<h3 class="legalcode">SECTION 17.50 – RELIEF FOR CONSUMERS</h3>
+<ul class="legalcode">
+    <li>When consumers suffer actual damages, they may sue under the DTPA for any of the following:
+        <ul class="legalcode">
+            <li><b>[A]</b>	False, misleading, or deceptive acts or practices in the conduct of any trade or commererce which were relied upon by the consumer to his or her detriment,</li>
+            <li><b>[B]</b>	Breach of contract or an expressed or implied warranty</li>
+            <li><b>[C]</b>	Unconscionable action, and</li>
+            <li><b>[D]</b>	Certain violations of the Texas Insurance Code.</li>
+        </ul>
+    </li></ul> </ul>
+</div>
+
+
+<p><br></p>
+<center><a href="#top"><img src="https://dtpa.github.io/lawsuit/site/back-to-top-simple.png" width="60px" alt="back to top"></a></center>  
+<h2><a name="timeline">Section D: Timeline</a></h2>
+
+<center>
+    <div id="sectionnote">
+    Section Note:
+    <p>This timeline is not comprehensive and does not list every relevant conversation, phone call, action, or other related event.</p>
+    </div>
+    <p>
+    <span id="related">Insurance Claim Information <b> DIRECTLY RELATED</b> to Black Forest Werkshop DTPA/fraud report.</span>
+    </p>
+</center>
+
+<br><br>
+
+  <ol class="timeline">
+    <li><b>08/18/21</b> &#8226; My car was anonymously <b>hit from the front</b> in a public parking lot, <span id="related">StateFarm Uninsured Motorist claim #53-25B5-72W</span>.</li>
+    <li><b>08/23/21</b> &#8226; My car was <b>hit from rear</b> while, I was in it, causing rear bumper damage <span id="related">StateFarm Auto Collision claim #53-24H4-39B</span>.</li>
+    <li><b>09/03/21</b> &#8226; Auto collision claim for <b>rear body damage</b> was started (x39B).</li>
+    <li><b>09/21/21</b> &#8226; Uninsured motorist claim for <b>front body damage</b> was started (x72W).</li>
+    
+    
+    <!--CUT OUT UNRELATED INSURANCE CLAIM
+    <li><span id="breakinheader"><b>09/23/21</b> &#8226; StateFarm claim #53-28S2-68F AND #53-28S2-74R</span><br>
+      <span id="breakinnarrative">
+      <p>My car was broken into on <b>09/23/21</b>, but I didn’t report the incident until <b>12/24/21</b>, per <a href="https://dtpa.github.io/lawsuit/docs/police-report-2021-8016306.pdf" target="_blank">Austin Police Department incident report #2021-8016306</a>. At the time, I felt overwhelmed with everything that was already going on in my personal and work lives. Because items were stolen from my car, I considered the car break-in a significant event; far more critical than the body damage that I was working with StateFarm, Bristol-West, Enterprise Rent-a-Car, and Black Forest Werkshop to resolve. I already had two open/concurrent insurance claims with StateFarm. I was trying to procure replacement parts for Lee Rector/Black Forest Werkshop to repair my car and doing my best to navigate my claims independently. I did not have a specifically assigned StateFarm claims agent to assist me, and I spoke with a different person every time I called StateFarm and Enterprise-Rent-a-Car. </p> 
+      <p>Part of my stress was that I was not expecting the rear-end collision to be processed through StateFarm, at all. I was not at fault for this accident, so I opened the claim with Bristol-West Insurance, the insurance company of the minor driver who rear-ended me. Bristol-West was a difficult insurance company to work with. Before I even had a chance to submit my pictures and the police report I had to them, they declared me at fault for being rear-ended, denied my claim with them, and initiated my claim with StateFarm. I was furious, confused, and unsure if what Bristol-West did was legal. I was not at fault for this accident. I did not want to pay a deductible, ruin my excellent driving record, and eventually be billed a higher auto insurance premium. All because a minor, a new driver, rear-ended me in a parking lot. </p>
+      <p>I sometimes had trouble keeping my claim numbers straight and often experienced difficulty communicating with the StateFarm agents because of the close date proximity of my claims and the slight overlap in detail they shared. I would regularly have to provide some reasonable level of context to the agents I spoke with to help them understand how my concurrent claims related to one another (<i>same repair shop, same rental agency</i>) and how they differed (<i>incident dates, claims recovery, 3rd party insurance company, two policy types</i>) for me to get the help and answers I needed. Frequent situations like these were confusing, frustrating, and stressful, which contributed to my overwhelm. I chose to wait until some of these stresses concluded before focusing on the two new claims that would result from my 09/23/21 car break-in. </p>  
+      <p>In <b>January</b>, due to the 09/23/21 car break-in, my vehicle was appraised a third time by StateFarm, shortly after I retrieved my car from Black Forest Werkshop. The details of this appraisal might prove helpful as material to support the state of disrepair my vehicle was still in after being at Black Forest Werkshop for 84 days. Other than that, the details of my 09/23/21 insurance claims are not related to my DTPA/fraud concerns involving Black Forest Werkshop. </p>
+      </span>
+      </li> CUT OUT UNRELATED INSURANCE CLAIM-->
+      
+    
+    
+    <li><b>09/25/21</b> &#8226; <span id="shopday">[Shop Day #01]</span> &#8226; I dropped my car off at Black Forest Werkshop to have them repair the front and rear body damage from both accidents.</li>
+    <li><b>09/25/21</b> &#8226; <span id="shopday">[Shop Day #01]</span> &#8226; I picked up my first of two rental cars from Enterprise Rent-a-Car.</li>
+    <li><b>09/27/21</b> &#8226; <span id="shopday">[Shop Day #02]</span> &#8226; StateFarm conducted their 1st (of two) damage/repair/estimate appraisal on-site at Black Forest Werkshop.</li>
+    <li><b>09/30/21</b> &#8226; <span id="shopday">[Shop Day #06]</span> &#8226; StateFarm paid me directly for the rear auto collision claim ($865.04 damage - $500.00 deductible)</li> 
+    <li><b>10/02/21</b> &#8226; <span id="shopday">[Shop Day #08]</span> &#8226; StateFarm paid me directly for the front uninsured motorist claim ($3814.31 damage - $250.00 deductible)</li>
+    <li><b>10/26/21</b> &#8226; <span id="shopday">[Shop Day #32]</span> &#8226; Black Forest Werkshop requested a second on-site repair/estimate appraisal from StateFarm. I did not know about this until after it happened and after StateFarm paid Black Forest Werkshop directly. This entire transaction, the second appraisal and the payout, was hidden from me; it was done without my knowledge. I am not sure how Lee was able to get StateFarm to pay him directly and bypass the insurance payment arrangements I had already established with StateFarm for these claims.</li>
+    <li><b>10/30/21</b> &#8226; <span id="shopday">[Shop Day #36]</span> &#8226; I returned rental car #1 to Enterprise Rent-a-Car because my rental car allowance of $1200 was about to max-out.</li>
+    <li><b>10/30/21</b> &#8226; <span id="shopday">[Shop Day #36]</span> &#8226; I picked up rental car #2 at Enterprise Rent-a-Car.</li>
+    <li><b>11/02/21</b> &#8226; <span id="shopday">[Shop Day #39]</span> &#8226; StateFarm conducted their 2nd (of two) damage/repair/estimate appraisal on-site at Black Forest Werkshop.</li>
+    <li><b>11/02/21</b> &#8226; <span id="shopday">[Shop Day #39]</span> &#8226; StateFarm paid Enterprise Rent-a-Car for the first car rental, 36 days of usage, $1147.12 (my claim max was $1200).</li>
+    <li><b>11/07/21</b> &#8226; <span id="shopday">[Shop Day #44]</span> &#8226; StateFarm paid Black Forest Werkshop a supplemental insurance payment of $415.16 directly as a result of the second damage apprasisal estimate that was conducted on 11/02/2021 per the request of Black Forest Werkshop. This entire transaction, the second appraisal and the payout, was hidden from me; it was done without my knowledge. I am not sure how Lee was able to get StateFarm to pay him directly and bypass the insurance payment arrangements I had already established with StateFarm for these claims.</li>
+    <li><b>11/11/21</b> &#8226; <span id="shopday">[Shop Day #48]</span> &#8226; StateFarm initiated subrogation against Bristol-West Insurance to recover costs associated with the rear-end accident for which StateFarm determined that I am not at fault (Auto Collision claim #53-24H4-39B). </li>
+    <li><b>11/12/21</b> &#8226; <span id="shopday">[Shop Day #49]</span> &#8226; Lee Rector emailed me once StateFarm declined to provide any additional payouts, "Let's just get this wrapped up so you can get into your car asap." I picked up my car 36 days after receiving this email.</li>
+    <li><b>11/17/21</b> &#8226; <span id="shopday">[Shop Day #54]</span> &#8226; Black Forest Werkshop emailed me and said my out of pocket cost for my repairs would be $825, and requested my consent to proceed.</li>
+    <li><b>11/18/21</b> &#8226; <span id="shopday">[Shop Day #55]</span> &#8226; I emailed Black Forest Werkshop consenting to the $825 price point asked them to proceed with repairing my car.</li>
+    <li><b>11/29/21</b> &#8226; <span id="shopday">[Shop Day #66]</span> &#8226; Black Forest Werkshop was clearly notified that my extended car rental (at 55 days now) was about to expire.</li>
+    <li><b>11/29/21</b> &#8226; <span id="shopday">[Shop Day #66]</span> &#8226; I emailed Black Forest Werkshop asking if I could pick up my car on or before 12/01/2021 by 6PM, when my rental car term expired. The shop owner replied within a few hours thanking me for the "heads up" and said "I don't expect that to be a problem."</li>
+    <li><b>12/01/21</b> &#8226; <span id="shopday">[Shop Day #68]</span> &#8226; I emailed Black Forest Werkshop asking when would be a good time for me to come pickup my car today since the shop owner confirmed through out last communication that my car would be ready for pick up today. The shop owner replied to my email, less than two hours before my rental car was dues due to be returned, stating that my car was not ready and that it hadn't even been painted yet. The shop owner said their were other cars ahead of mine waiting to be painted. The shop owner asked me to call him back two days later for an update. "The painter had a couple of cars to complete so he's not been able to finish yours. I hope he'll get it done by Friday."</li> 
+    <li><b>12/03/21</b> &#8226; <span id="shopday">[Shop Day #70]</span> &#8226; I called the shop owner to check on the status of my vehicle as I was now expecting to pay out-of-pocket for the rental I was driving that was due back two days ago. The shop owner, Lee, was unavailable. Josh, the shop attendant, answered the phone, but couldn't provide me with an update on my car. I expressed my concerns with how long this repair was taking and that I was now paying out-of-pocket for my rental car. Josh, apologized for the inconvenience and said he would let Lee know that I called and assured me that Lee would call me back shortly. Lee did not return my call that day (Friday).</li>  
+    <li><b>12/06/21</b> &#8226; <span id="shopday">[Shop Day #73]</span> &#8226; Called the shop again, explained once more that I was no being billed out-of-pocket for my car rental. Lee said, "that's how it goes sometimes. It can't be helped." I asked Lee to cover the cost of my out-of-pocket rental fees given that he's already had my vehicle for 73 days. I also expressed my displeasure that Lee stopped returning my calls despite the number of times I would call Black Forest Werkshop. Josh would usually answer the phone but never felt comfortable giving me an update on the status of my car. Josh would promise to leave a message with Lee, but Lee stopped calling me back.</li>
+    <li><b>12/06/21</b> &#8226; <span id="shopday">[Shop Day #73]</span> &#8226; Lee set new expectations that my car would be ready by the end of the week, on 12/10/2021, and I was now expecting to pay out of pocket for 9 days of car rental.</li>
+    <li><b>12/06/21</b> &#8226; <span id="shopday">[Shop Day #73]</span> &#8226; Called the Bristol-West Insurance claims dept to try get Bristol-West to agree to cover the costs of my extended car rental time since my car was in the repair shop for damage their driver caused.</li>
+    <li><b>12/06/21</b> &#8226; <span id="shopday">[Shop Day #73]</span> &#8226; Called and texted the Bristol-West Insurance Agent I spoke with back in September, Beza Hailemariam, to try get Bristol-West to agree to cover the costs of my extended car rental time since my car was in the repair shop for damage their driver caused. Agent Beza was non-responsive. </li>
+    <li><b>12/06/21</b> &#8226; <span id="shopday">[Shop Day #73]</span> &#8226; Unable to reach the Bristol-West agent I spoke with before or reach a person through the Bristol-West claims depart phone number, and at per the advice of an agent who works for my insurance company (StateFarm) I created a new online auto collision claim with Bristol-West Insurance and was contacted by a new Bristol-West agent, Tiffany Swait. </li>
+    <li><b>12/07/21</b> &#8226; <span id="shopday">[Shop Day #74]</span> &#8226; Worked with Bristol-West, Tiffany Swait, and a StateFarm agent on a conference call to try to see what options were available to me through both insurance agencies to extend my rental car coverage. We discussed the possibility of making Black Forest Werkshop pay for the extra days of rental due to their excessive delays in repairing my vehicle and Black Forest Werkshop's repeated failure to complete my repairs by the deadlines they set. No solutions as to how to pay for my rental car were reached. My concerns remain outstanding and my out-of-pocket costs to the car rental agency continue to accrue.</li>
+    <li><b>12/07/21</b> &#8226; <span id="shopday">[Shop Day #74]</span> &#8226; Reached back out to StateFarm again, and this time spoke with an agent who was able to find a way to extend my car rental coverage.</li> 
+    <li><b>12/07/21</b> &#8226; <span id="shopday">[Shop Day #74]</span> &#8226; StateFarm agreed to adjust my rental coverage to cover the charges from 12/02/2021 through today, the full period Enterprise Rent-a-Car was billing me out-of-pocket. The StateFarm agent also extended my rental coverage through 12/13/21 based on the expectations Lee Rector set for me yesterday (12/06/2021) when I called him asking for an update.</li>
+    <li><b>12/10/21</b> &#8226; <span id="shopday">[Shop Day #77]</span> &#8226; On 12/06/2021 Lee set my expectations that my car would be ready by today. When we ended our conversation on the 6th both Lee and I were under the impression that I was now paying out-of-pocket for my car rental and that today would mark the 9th day of me paying out-of-pocket rental fees. I did not tell Lee that StateFarm had found a way to work with me to cover these additional days of rental. I called Black Forest Werkshop today at 11:21 AM and spoke with Josh who was unable to give me an update on my car. Josh promised to let Lee know that I called so that Lee could call me back with an update. I waited five hours, Lee did not call me back. I called Black Forest Back at 4:21 PM and spoke with Josh again, he said that Lee had left for the day. My car was still not ready for me to pick-up. Lee believed I was now 9 days into paying out of pocket for my rental car and still chose to leave work for the weekend without returning my call, seemingly unbothered that I would now need a rental car for at least another 3 days assuming my car was ready on Monday (which it was not).</li>
+    <li><b>12/13/21</b> &#8226; <span id="shopday">[Shop Day #80]</span> &#8226; Monday, the day passed without Lee returning my calls from Friday the 10th.</li>
+    <li><b>12/13/21</b> &#8226; <span id="shopday">[Shop Day #80]</span> &#8226; I'd been waiting several days for Lee to return my calls with an update on my car, but there were no updates. I called StateFarm again and they extended my car rental through 12/15/2021.</li>
+    <li><b>12/14/21</b> &#8226; <span id="shopday">[Shop Day #81]</span> &#8226; Tuesday, the day passed without Lee returning my calls from Friday the 10th.</li>
+    <li><b>12/15/21</b> &#8226; <span id="shopday">[Shop Day #82]</span> &#8226; Lee still had not returned my calls, but today I was able to call and reach Lee. He said my car was still not ready for pickup. He said he had some concerns with installing the headlights I purchased. He said they required speacial light bulbs that on their own "would cost almost as much as the headlight itself." He quoted the price of the bulbs at $200 each, and it would be $400 for the light bulbs if I still wanted him to repair my car using the headlights I purchased. I told him I did and that I could buy a pair of bulbs myself for under $60 and drop them off at the shop for him to use.</li>
+    <li><b>12/15/21</b> &#8226; <span id="shopday">[Shop Day #82]</span> &#8226; Because my car was still not ready for pick-up I called StateFarm again to request an extension of my car rental. The StateFarm agent called Black Forest Werkshop and spoke with Lee Rector and me on a conference call. Lee said that the reason my car wasn't ready is because he didn't have a replacement headlight (even though he had the headlights I supplied him). While on the phone with StateFarm Lee offered to procure a used headlight for me to finish the car. I was tired of this never ending repair, string delays, constant stressfilled calls to StateFarm over my rental, and Lee's excuses as to why he could never perfor or deliver on his promises; I agreed to let Lee purchase a used headlight. I could not deal with this any longer.</li>
+    <li><b>12/15/21</b> &#8226; <span id="shopday">[Shop Day #82]</span> &#8226; After disconnecting Lee from the conference call, StateFarm extended my rental car again through 12/18/2021.</li>
+
+    <li><b>12/15/21</b> &#8226; <span id="shopday">[Shop Day #82]</span> &#8226; I had several calls with StateFarm Dec 13th-16th, but I spoke with one StateFarm agent for 102 minutes on the 15th at 2:53 PM about my frustrations in dealing with Black Forest Werkshop and my fears and my concerns in picking up my car. We discussed the possibility of reaching out to law enforcement to see if they would be able to provide any type of assistance or peace of mind.</li>
+    
+    <!---ANCHOR--->
+
+    <a name="police1"></a>
+    <li><b>12/16/21</b> &#8226; <span id="shopday">[Shop Day #83]</span> &#8226; My anxiety continued to deepen. I was dreading going to pick up my car on my own. Given my past dealings with Lee Rector, I had no idea what to expect. All I knew was that he had my car, and I needed it back. I did not want any fights; I did not want any arguments or altercations, only for this drama and nightmare to end. I also had no idea what to expect about the state of my vehicle or how much Lee would ultimately decide to charge me before allowing me access to my car and car key. I wasn't sure what to expect when picking up my car at Black Forest Werkshop. I was so uncomfortable that I called the City of Austin non-emergency police contact number on Dec. 16, 2021, to see if I could get a police escort to come with me to pick up my vehicle. The agent on the phone said my concerns sounded more like a civil matter than an active crime, and therefore law enforcement could not/would not be dispatched to assist me. A few minutes after ending this call, I met a police officer driving around Murchison Middle School (Austin, Texas) on night patrol (Dec. 16, 2021, ~08:00 PM). We talked for close to an hour. The officer I spoke with also advised me that law enforcement would not assist me by escorting me to the repair shop to pick up my vehicle; he too said that intervention was unlikely because the matter was civil rather than criminal. The best advice he could offer was to see if my insurance company would send one of their appraisers to meet me at the shop to help provide some level of support when I went to pick up my vehicle. Later that night, after reflecting on my recent conversations with my insurance agent and the police officer, I realized that whatever was about to happen, I would have to do it alone. My safety was my primary concern, but getting my car back was my goal. With those two goals in mind, I made a plan. I had no idea what Lee was planning to charge me, but I would quietly agree to and pay him by check whatever the amount Lee asked for; only I would not allow that check to clear the bank. Instead, I planned to take the time I needed once I recovered my car to have it properly inspected to see what work was and was not done and use StateFarm's repair estimate to negotiate, safely - through email, a fair price with Lee for the work that was complete and then pay him.</li>
+
+    <li><b>12/17/21</b> &#8226; <span id="shopday">[Shop Day #84]</span> &#8226; (11:53 AM) I called Black Forest Werkshop again to check on the status of my car, again. I spoke with Josh, who, once again, did not seem comfortable commenting on the status of my car. Josh informed me, once again, that Lee was unavailable, and that once again, he would let Lee know that I called for an update.</li>
+    <li><b>12/17/21</b> &#8226; <span id="shopday">[Shop Day #84]</span> &#8226; (12:34 PM) Lee returned my call. He said that my car was ready for pickup and that the outstanding amount I owed him was $2051.16 which was 248.63% more than the $825 Lee said I would owe him when the repairs were done in the email he sent me on 11/17/21 (Shop Day #54). On 11/18/21 (Shop Day #55), I replied to Lee's email consenting to the $825 price point. I never agreed to any price other than $825, and Lee and I never discussed any prices after agreeing to the $825. </li>
+    <li><b>12/17/21</b> &#8226; <span id="shopday">[Shop Day #84]</span> &#8226; I wrote a check for the $2051.16 Lee quoted me on the phone, and left to go pick up my car.</li>
+    <li><b>12/17/21</b> &#8226; <span id="shopday">[Shop Day #84]</span> &#8226; When I arrived at Black Forest Werkshop to pick up my car, Lee told me the amount due was $2268.46, or 274.96% more than the $825 we agreed to. I paid Lee with the precut check for $2051.16 that I knew would not clear the bank because I intentionally canceled the associated bank account the prior evening, on the 16th, in anticipation that something hugely unexpected would happen when the time finally arrived for me to pick up my car. </li>
+    <li><b>12/17/21</b> &#8226; <span id="shopday">[Shop Day #84]</span> &#8226; No work was done to fix the rear body damage, the front body repair work was done poorly and also missing parts, the inside driver side leather of my car was covered in dark oily soot, Lee did not replace the front gray colored grill with the black colored grill I purchased for him to install, the headlights I purchased for him to install were not used, and there was new electrical damage to my car that did not exist when I dropped the car off.</li> 
+    <li><b>12/17/21</b> &#8226; <span id="shopday">[Shop Day #84]</span> &#8226; I picked up my car from Black Forest Werkshop.</li>
+    <li><b>12/17/21</b> &#8226; <span id="shopday">[Shop Day #84]</span> &#8226; Returned rental car #2 at Enterprise Rent-a-Car (billed for 49 days of usage)</li>
+    <li><b>12/26/21</b> &#8226; StateFarm paid Enterprise Rent-a-Car for the second car rental, 49 days of usage, $1748.79 (my originally quoted claim max was $1200).</li>
+    <li><b>01/05/22</b> &#8226; Spoke with StateFarm Insurance Agent, Kelly Jo Sill, Claims Special Investigations Unit, to ask for guidance on how to properly and formally register a complaint against Black Forest Werkshop and my concerns of fraud.</li>
+    <li><b>01/16/22</b> &#8226; I submitted an online fraud report with the National Insurance Crime Bureau (NICB).</li>
+    <li><b>01/16/22</b> &#8226; I submitted an online fraud report with the Texas Office Attorney General (OAG).</li>
+    <li><b>01/17/22</b> &#8226; I spoke with Texas Department of Insurance (TDI).</li>
+    <li><b>01/18/22</b> &#8226; I submitted an online fraud report with the Federal Trade Commission (FTC).</li>
+    <li><b>01/19/22</b> &#8226; I submitted an application for legal assistance with Texas RioGrande Legal Aid (TRLA).</li>
+    <li><b>01/25/22</b> &#8226; Received an email from Texas RioGrande Legal Aid attorney, Jessica Zaboroski, with guidance on how to pursue legal remedy through small claims court.</li>
+    <li><b>01/26/22</b> &#8226; Lawyer, Jessica Zaboroski</li>
+    <li><b>02/03/22</b> &#8226; Lawyer, Jessica Zaboroski</li>
+    <li><b>02/04/22</b> &#8226; I received my first contact response from NICB from Special Agent, Jeffrey Watts.</li>
+    <li><b>02/09/22</b> &#8226; Submitted this website to NICB Special Agent Jeffrey Watts.</li>
+    <li><b>02/09/22</b> &#8226; Lawyer, Jessica Zaboroski</li>
+
+    <!-- *** UPDATE NEEDED *** -->
+    <li><b>02/09/22</b> &#8226; NICB Special Agent Jeffrey Watts, did not have enough State resources to take action on my claim, but found "shady activity" and advised me to pursue my claim through hiring a personal attorney.</li>
+    <li><b>04/02/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>05/13/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>05/16/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>05/20/22</b> &#8226; Lawyer, John Swanson</li>
+    <li><b>05/20/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>05/27/22</b> &#8226; Lawyer, John Swanson</li>
+    <li><b>05/31/22</b> &#8226; Lawyer, John Swanson</li>
+    <li><b>05/31/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>06/07/22</b> &#8226; Lawyer, John Swanson</li>
+    <li><b>06/07/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>06/08/22</b> &#8226; Received confirmation from the Ross & Mathews law firm that my demand letter was sent to Lee Rector by both USPS certified mail and USPS first-class mail.</li> 
+    <li><b>06/10/22</b> &#8226; Lawyer, Mark Kelly</li>
+    <li><b>06/10/22</b> &#8226; Lawyer, John Swanson</li>
+    <li><b>06/11/22</b> &#8226; Lawyer, John Swanson</li>
+    <li><b>06/13/22</b> &#8226; Lee Rector received the certified pre-DTPA demand letter sent by Ross & Mathews (11:09 AM) giving him the oppurtunity to contact me withing the next ten days to settle this matter out of court.</li>
+    <li><b>06/13/22</b> &#8226; Lawyer, Al Lazarus</li>
+    <li><b>06/14/22</b> &#8226; Lawyer, Laurie Ackerman</li>
+    <li><b>06/21/22</b> &#8226; Lawyer, Laurie Ackerman</li>
+    <li><b>06/23/22</b> &#8226; Marks the 10-day deadline for Lee Rector to respond to the Demand Letter he received on on Thursday, June 13, 2022.</li>
+    <li><b>06/23/22</b> &#8226; Neither Lee Rector nor anyone representing him reached to contact me in response to the demand letter he received. And, as mentioned in the letter, I will take further action to pursue a final resolution through the court system.
+    <li><b>06/24/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>06/27/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>06/28/22</b> &#8226; Lawyer, Mark LaSpina</li>
+    <li><b>06/28/22</b> &#8226; Lawyer, Andrew Stasio</li>
+    <li><b>07/05/22</b> &#8226; Filed Texas Travis Country Small Claims Case online through EFileTexas.gov</li>
+    <li><b>07/05/22</b> &#8226; Small Claims Case Petition was generated by the court.</li>
+    <li><b>07/06/22</b> &#8226; Received notice that my small claims case was accepted by the court.</li>
+    <li><b>07/07/22</b> &#8226; Lee Rector was served the small claims court petition by the Constable's office informing him that he was being sued.</li>
+    <li><b>07/07/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>07/18/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>07/21/22</b> &#8226; Lawyer, Jessica Zaboroski</li>
+    <li><b>07/21/22</b> &#8226; Marks the 14-day deadline for Lee Rector to respond to the Civil Justice Citation he received on Thursday, July 7, 2022.</li>
+    <li><b>07/21/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>07/21/22</b> &#8226; Received notification of a counterclaim from the office of Lee Rector's counsel, McGinnis Lochridge with the email subject line, "Cause No. J5-CV-22-263457; Jaden Riley v. Black Forest Werkshop and Harvey Lee Rector" at 10:13 AM.</li>
+    <li><b>07/22/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>07/22/22</b> &#8226; Lawyer, Jessica Zaboroski</li>
+    <li><b>07/25/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>08/03/22</b> &#8226; Lawyer, Jessica Zaboroski</li>
+    <li><b>08/04/22</b> &#8226; Lawyer, Roy O. Smithers</li>
+    <li><b>08/04/22</b> &#8226; Lawyer, Roy O. Smithers</li>
+    <li><b>08/05/22</b> &#8226; Lawyer, Jon Michael Smith</li>
+    <li><b>08/05/22</b> &#8226; Lawyer, Brent Devere</li>
+    <li><b>08/09/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>08/09/22</b> &#8226; Lawyer, Brent Devere</li>
+    <li><b>08/11/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>08/13/22</b> &#8226; Lawyer, Brent Devere</li>
+    <li><b>08/15/22</b> &#8226; Lawyer, Brent Devere</li>
+    <li><b>08/18/22</b> &#8226; Lawyer, Brent Devere</li>
+    <li><b>08/19/22</b> &#8226; Lawyer, Brent Devere</li>
+    <li><b>08/20/22</b> &#8226; Lawyer, Brent Devere</li>
+    <li><b>08/21/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>08/21/22</b> &#8226; Lawyer, Brent Devere</li>
+    <li><b>08/22/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>08/22/22</b> &#8226; Lawyer, Mark LaSpina</li>
+    <li><b>08/22/22</b> &#8226; Lawyer, Thomas Law Firm</li>
+    <li><b>08/23/22</b> &#8226; Lawyer, Thomas Law Firm</li>
+    <li><b>08/23/22</b> &#8226; Lawyer, Mark LaSpina</li>
+    <li><b>08/24/22</b> &#8226; Lawyer, Mark LaSpina</li>
+    <li><b>08/24/22</b> &#8226; Lawyer, Thomas Law Firm</li>
+    <li><b>08/25/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>08/25/22</b> &#8226; Lawyer, Mark LaSpina</li>
+    <li><b>08/29/22</b> &#8226; Lawyer, Thomas Law Firm</li>
+    <li><b>08/29/22</b> &#8226; Lawyer, Thomas Law Firm</li>
+    <li><b>09/01/22</b> &#8226; Lawyer, Patrick Sipe</li>
+    <li><b>09/01/22</b> &#8226; Paid $3,000 to retain the Thomas Law Firm.</li>
+    <li><b>09/02/22</b> &#8226; Signed Letter of Representation with Thomas Law Firm</li>
+    <li><b>09/08/22</b> &#8226; Lawyer, Thomas Law Firm</li>
+    <li><b>09/09/22</b> &#8226; Lawyer, Thomas Law Firm</li>
+    <li><b>09/12/22</b> &#8226; Lawyer, Thomas Law Firm, Patrick Sipe</li>
+    <li><b>09/20/22</b> &#8226; Received first draft of my Amended Petition from Thomas Law Firm, Patrick Sipe</li>
+    <li><b>09/22/22</b> &#8226; Worked on my Amended Petition.</li>
+    <li><b>09/23/22</b> &#8226; Worked on my Amended Petition.</li>
+    <li><b>09/24/22</b> &#8226; Worked on my Amended Petition.</li>
+    <li><b>09/26/22</b> &#8226; Lawyer, Mark LaSpina</li>
+    <li><b>09/12/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>09/21/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+	  <li><b>09/22/22</b> &#8226; Lawyer, Thomas Law Firm, Patrick Sipe</li>
+    <li><b>09/26/22</b> &#8226; Took my car to Caliber Collision Onion Creek for a damage repair estimate.</li>
+    <li><b>09/26/22</b> &#8226; Dropped off my car at BMW of South Austin for diagnostic services and a damage repair estimate.</li>
+    <li><b>09/26/22</b> &#8226; Contacted State Farm insurance to get a copy of the damage photos the insurance adjuster took.</li>
+    <li><b>09/27/22</b> &#8226; Secured a rental car from Hertz while my car was at BMW South Austin.</li>
+    <li><b>09/28/22</b> &#8226; Contacted Auto P.I. to request a copy of my pre-purchase vehicle inspection report.</li>
+    <li><b>09/29/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>09/29/22</b> &#8226; Picked my car up from BMW of South Austin and received a damage repair estimate.</li>
+    <li><b>09/29/22</b> &#8226; Worked on my Amended Petition.</li>
+    <li><b>09/30/22</b> &#8226; Emailed a copy of BMW's Vehicle Inspectin Report to Caliber Collision Onion Creek and requested a damage repair estimate.</li>
+    <li><b>09/30/22</b> &#8226; Contacted again Auto P.I. to follow-up on my request a copy of my pre-purchase vehicle inspection report.</li>
+    <li><b>09/12/22</b> &#8226; Lawyer, Thomas Law Firm, Patrick Sipe</li>
+    <li><b>10/03/22</b> &#8226; Worked on my Amended Petition.</li>
+    <li><b>10/05/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>10/06/22</b> &#8226; Contacted Caliber Collision Onion Creek to ask for an update and ETA on receiving their damage repair estimate.</li>
+    <li><b>10/03/22</b> &#8226; Worked on my Amended Petition.</li>
+    <li><b>10/07/22</b> &#8226; Received the damage repair estimate from Caliber Collision Onion Creek.</li>
+    <li><b>10/08/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>10/10/22</b> &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+    <li><b>10/03/22</b> &#8226; Worked on my Amended Petition.</li>
+    <li><b>10/10/22</b> &#8226; <span id="shopday">[Days of Drama #419]</span> &#8226; Day 419 of Black Forest Werkshop occupying my time, costing me money, causing me stress, and negatively impacting life.</li>
+	  
+	  <li><b>10/11/22</b> &#8226; ADD INFO about work done gathering and organing data/evidence/updating the web site, and also work done related to amending small claims court petition. </li>
+	  
+	  <li><b>10/13/22</b> &#8226; ADD INFO related to amending small claims court petition.</li> 
+	  
+	  <li><b>10/18/22</b> &#8226; ADD INFO related to amending small claims court petition.</li> 
+	  
+	  <li><b>10/28/22</b> &#8226; ADD INFO related to pre-trial hearing</li> 
+	  
+	  <li><b>10/28/22</b> &#8226; ADD INFO related to motion to transfer</li> 
+	  
+	  <li><b>11/03/22</b> &#8226; ADD INFO related to motion to transfer</li> 
+	  
+	  <li><b>11/04/22</b> &#8226; ADD INFO</li> 
+	  
+	  <li><b>11/09/22</b> &#8226; ADD INFO about work done gathering and organing data/evidence/updating the web site.</li>
+	  
+	  <li><b>11/09/22</b> &#8226; Multiple emails between Thomas Law Firm and me to discuss the possibility of meeting soo to to get updates on the status of moving my case to District Court and what the Thomas Law Firm needs from me to draft a settlement letter on my behalf to present to Defendant.</li>
+	  
+	  <li><b>11/09/22</b> &#8226; Multiple emails between Thomas Law Firm and me to schedule a date and time for our next Zoom meeting, which was set for Nov 10, 2022 01:00 PM.</li>
+	  
+	  <li><b>11/10/22</b> &#8226; 1:00 PM Zoom meeting with Lawyer Patrick Sipe from Thomas Law Firm and me to discuss Thomas Law Firm drafting a settlement letter on my behalf to present to Defendant.</li>
+	  
+	  <li><b>11/10/22</b> &#8226; Email from me to Thomas Law Firm to ask when I should expect an update on my request/motion to transfer my case from Small Claims Court to County Court.</li>
+	  
+	  
+	  <li><b>11/15/22</b> &#8226; Multiple emails between Thomas Law Firm and myself where I thank them for the update/news that my case was able to be moved from Small Claims Court to District Court, I learn of 8 timeline events the Defendant's legal team was focusing on, and explained to my legal team why I believe that the Defendant could not take legal action against me for the check I provided to him the day I retrieved my car from Black Forest Werkshop because of my understanding of the "bad check" information proved on a Travis County Website: https://www.traviscountytx.gov/county-attorney/hot-checks/filing. I provided Thomas Law Firm with photo copies of the carbon-duplicate version of the check I provided the Defendant on 12/17/21.</li>
+	  
+	  <li><b>11/16/22</b> &#8226; Spent most of the day reviewing the information at my disposal to provide Thomas Law Firm with details on the 8 timeline events the Defendant's legal team was focusing on. </li>
+	  
+	  <li><b>11/17/22</b> &#8226; Email from me to Thoams Law Firm, an extension of my previous email from 11/15/22 where I elaborate extensively on the 8 timeline events the Defendant's legal team was focusing on.</li>
+	  
+	  	 <li><b>11/22/22</b> &#8226; Email from me to Thomas Law Firm where I defined and communicated my settlement amount to the Thomas Law Firm and responded to/elaborated on/provided details about the 8 timeline events the Defendant's legal team mentioned to my legal team. </li>
+	  
+	 <li><b>12/08/22</b> &#8226; Email from me to Thomas Law Firm asking if they received a email and email attachment I sent them more than two weeks ago, on November 22, 2023 since I haven't received any confirmation yet.</li>
+	  
+	  <li><b>12/15/22</b> &#8226; Several emails back and forth between Thomas Law Firm and me attempting to schedule a meeting so I can get an update on the status of my case.</li>
+	  
+	  <li><b>12/16/22</b> &#8226; Email from Thomas Law Firm to me recommending that we schedule our next meeting for, 12/20/2022 @ 10:30 AM.</li>
+	  
+	  <li><b>12/16/22</b> &#8226; Email from me to Thomas Law Firm agreeing to the date and time of next meeting--12/20/2022 @ 10:30 AM.</li>
+	  
+	  <li><b>12/19/22</b> &#8226; Email from me to Thomas Law Firm providing them with a Zoom link to tomorrow morning's meeting--12/20/2022 @ 10:30 AM.</li>
+	  
+	  <li><b>12/20/22</b> &#8226; 10:30 AM Zoom meeting with Lawyer Patrick Sipe and Aide Madalyn to discuss the Thomas Law Firm drafting a settlement letter on my behalf.</li>
+	  
+	  	  <li><b>01/09/23</b> &#8226; Email to Thomas Law Firm from me requesting an update on the status of my case since I haven't heard from Thomas Law Firm in twenty-one days, since our December 20, 2022 Zoom meeting.</li>
+	  
+	  <li><b>01/10/23</b> &#8226; Email from Thomas Law Firm in response to my January 9, 2023 email informing me that they have been out of the office for the holidays and will begin working on creating their first draft of my new district court petition. </li>
+
+    <li><b>01/13/23</b> &#8226; Email to Thomas Law Firm from me in response to their January 10, 2023. </li>
+	  
+	  
+<li><b>01/17/23</b> &#8226; Phone call from Thomas Law Firm, and email to Thomas Law Firm to discuss Thomas Law Firm's progress on completing their first draft of my new district court petition. </li>
+	  
+	  <li><b>01/20/23</b> &#8226; Received a copy of Thomas Law Firm's first draft of my new district court petition to review. </li>
+	  
+	  <li><b>01/20/23</b> &#8226; Worked on my reviewing and editing the Thomas Law Firm's first draft of my new district court petition. </li>
+	  
+	  <li><b>01/21/23</b>  &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+	  
+	  <li><b>01/21/23</b> &#8226; Worked on my reviewing and editing the Thomas Law Firm's first draft of my new district court petition. </li>
+	  
+	  <li><b>01/22/23</b>  &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+	  
+	  <li><b>01/22/23</b> &#8226; Worked on my reviewing and editing the Thomas Law Firm's first draft of my new district court petition. </li>
+	  
+	  <li><b>01/20/23</b> &#8226; Finished reviewing and editing the Thomas Law Firm's first draft of my new district court petition. </li>
+	  
+    <li><b>01/23/23</b> &#8226; Submitted my edits of Thomas Law Firm's first draft of my new district court petition back to Thomas Law Firm. </li>
+	  
+	  <li><b>01/23/23</b>  &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+	  
+	  <li><b>01/24/23</b>  &#8226; Worked on this website. Proof of work can be found digitally through reviewing the site edit logs on GitHub.com, which is where this website is hosted.</li>
+	  
+    <li><b>02/27/23</b> &#8226; <span id="shopday">[Days of Drama #521]</span> &#8226; Day 521 of Black Forest Werkshop occupying my time, costing me money, causing me stress, and negatively impacting life. Or 1 year, 5 months, 3 days. Or 17 months, 3 days.</li>
+	  <li><b>02/27/23</b> &#8226; <span id="shopday">[Days Since Hiring Thomas Law #179]</span> &#8226; Day 179 (5 months and 26 days) Since signing my Letter of Representation with Thomas Law.</li>
+
+<!---CLIPPED.
+    <li><b>01/19/22</b> &#8226;  I submitted an application for legal assistance with Texas RioGrande Legal Aid (TRLA).</li>
+    <li><b>02/04/22</b> &#8226;  I received my first contact response from NICB.</li>
+    <li><b>02/09/22</b> &#8226;  Submitted this website to NICB Special Agent Jeffrey Watts.</li>
+CLIPPED-->
+</ol>
+    
+<p><br></p>
+<center><a href="#top"><img src="https://dtpa.github.io/lawsuit/site/back-to-top-simple.png" width="60px" alt="back to top"></a></center>
+<h2><a name="audio">Section E: Audio Recordings</a></h2>
+
+
+
+<h3>Discussions Related to the Repair of my Car</h3>
+
+<ol class="audio">
+  <a name="01"></a>
+<li><b>Length 00:00:39</b> </b>| 
+<a href="https://dtpa.github.io/lawsuit/audio/headlights-require-special-lightbulbs-could-not-install-them.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+So that's, that's definitely an HID headlight. The the, the halogen bulbs won't even stay in there. There's no way to even put them in. So I'm thinking they just simply sent you the wrong ones. Hopefully, they I have no idea what the price differences between the HID versus those halogen ones non HID. Oh, hopefully you paid the cheaper of the price. Hopefully these you might look them up and see if they sell for more money. And if they are worth more money then you could tell them hey, these are worth more money. All I want to get out of them is x.</p> 
+
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>
+This audio supports my claims that the shop owner agreed to install parts that I purchased. However, he does not make any money off of the parts I purchased. By not using the parts I purchased he can then offer to sell me parts (with his customery 30% markup per his 11/17/2021 email to me.) Why would he agree to let me buy my parts before hand if he makes so much money of the selling parts?  His reason for mot installing my parts was because I didn't have HID bulbs, HID bulbs can be purchased, I offered to buy these bulbs and deliver them to him to use for install. The headlight assemblies do fit my vehicle. The information Lee is providing about the headlights I purchased for him to install is partially incorrect. The headlights do fit my vehicle. the parts i replaced were direct OEM replacements for the part numbers associated with my vehicle's VIN. Other 2012 BMW 328i Sedan owners purchased the same headlights and were able to install them in teir cars. Additionally, Lee told me if he did install the headlights I purchased, the bulbs were still missing and that the type of bulb used by the headlight I purchased "costs almost as much as another headlight." He quoted me $200 per head light bulb. When I confronted him and said that I found a pair of replacement bulbs for $60 and that I would be happy to buy them and drop them off at his shop, Lee changed his tune and said they headlights i purchased didn't fit my car and that the fastest way yo resolve the issue was to let him buy a used headlight and use the part he purchased for the repairs. In the end Lee tried to bill me for the headlight replacement twice and I am also out-of-pocket for the cost of the headlights I purchased which are still sitting in my trunk. By the time Lee mentioned any concerns about using the replacement parts I purchased, the 60 day return window had lapsed. The headlights I purchased could no longer be returned. </p></li>
+
+
+<br><br>
+
+<a name="02"></a>
+<li><b>Length 00:00:51</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/explanation-for-new-electrical-error-foglights.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+Here's your original foglights your fog lights. They have the LED light emitting diode they have the and with those in there, your car is now telling you that you have burned out bulbs in your fog lights. *** Okay, am I getting error messages or anything? Why? *** Because of that, because they're the LED ones and not the normal these original foglights or halogen. And since those are LED then the the resistance in that system is different. And so it thinks it has burned out bulbs they do work all the bulbs work.</p> 
+
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>Black Forest Werkshop had my car for 84 days. Why am I hearing abut this fog light issue for the first time when I arrive to pick up my car? Why wasn't I told earlier that Black Forest was expericing a problem installing my fog lights and that the new foglights were causing the car to detect an electrical error?</p></li>
+
+
+<br><br>
+<a name="03"></a>
+<li><b>Length 00:00:28</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/black-front-grill-parts-not-installed.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+Okay, what about the grill? I gave you the grill parts. There's also the grill part. *** Yeah, are those new ones? *** Yeah. That was one of the first things that we talked about was to replace it with the black pieces. *** I'm drawing a blank on that one.</p> 
+
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>Another expectation of work that we discussed that was suppossed to be done that was not. Also more support that he agreed to install parts I purchased.</p></li>
+
+<br><br>
+<a name="04"></a>
+<li><b>Length 00:00:50</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/explanation-fog-light-trim-not-fixed.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+I think this is for the side. This is for this side. And it doesn't really matter. fit in there so it's a different curve right here it's just a completely different maybe that these are designed to fit that aftermarket bumper that you had *** hrm no, they're just, again I searched for these by the BMW part number.</p>
+
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>More work that was expected that was not done, this is again the first time I heard about this, and the part he is trying to convince me does not fit, do fit. All of the parts I supplied do fit. All parts came in pairs. The parts I purchased fit properly on the side of the car that was not damaged. The reason the replacement parts I purchased do not fit the side of the car that was damaged is because Black Forest Werkshop did a poor job repairing my vehicle. I gave unused replacement parts to the BMW Dealership repair shop and they had no problems snapping the replacement part i purchased in on te side of the car that was not damaged. I am also confused as to why Lee would tell me that my car was repaired and ready for pick up? Had my car for 84 days and the first I hear about this issue is when I arrive to pick up my car.</p></li>
+  
+<br><br>
+<a name="05"></a>
+<li><b>Length 00:00:07</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/no-work-was-done-on-the-rear-bumper.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+So no, no work at all was done on the rear of the car, on the rear bumper? *** Right *** Okay</p>
+
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>XXXXX Still need to add personal commentary. XXXXX</p></li>
+
+<br><br>
+<a name="06"></a>
+<li><b>Length 00:02:05</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/personal-note-rear-not-fixed-fog-lights-elec-error.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext">Okay so I'm picking up my car. He did no work on the rear bumper at all. So that's the rear bumper, the rear labor, the tow hook, no work was done on the rear bumper. He did use the fog lights that I purchased not the fog lights he didn't buy any fog lights so and those foglights work but they show an error message on the BMWs computer because the fog lights even though they work and they put out light they are LED and not other types of bulbs so the BMW computer is confused. There's nothing wrong with the two [fog lights]. The fog lights that he took out aren't damaged. Wow.</p>
+
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>XXXXX Still need to add personal commentary. XXXXX</p></li>
+
+<br><br>
+<a name="07"></a>
+<li><b>Length 00:00:47</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/original-fog-lights-not-damaged-why-not-reinstall-them-if-new-ones-cause-error.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+Hey Lee, I have a question for you, sorry. So, so these are the these are the fog lights that I purchased and brought to you but they're causing an error message so why not just keep the original fog lights if they're undamaged. The fog lights that are in the trunk why did you switch them so if those are causing an error message on the computer why switch them out, why not just keep the original fog lights back when they're not damaged? *** Yeah we had no idea that they were going to give us problems so we just stuck them in there and then once it got all stuck in there we realized it was trouble.</p>
+
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>XXXXX Still need to add personal commentary. XXXXX</p></li>
+
+<br><br>
+<a name="08"></a>
+<li><b>Length 00:00:27</b> | 
+  <a href="https://dtpa.github.io/lawsuit/audio/recycle-the-still-usable-foglights.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  <div class="law">
+      I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+      <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+  </div>
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+    Want to throw these in the recycling or do you want me to? *** Throw them in the back with the rest of the junk. *** These are still good just because one of them's broke off the rest of it still usable, wonderful world of plastic. </p>
+  
+  <p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>Lee acknowledge's that the stock fog lights Black Forest Werkshop removed from my car still work and are still usable. Lee want's me to agree to leave the working fog lights that they removed from my car behind with him, "throw them in recycling." I declined. I was concerned that Lee might try to "resell" my working OEM fog lights to another customer in the future, and I didn't want to be a part of that. I'm also still not sure why Lee wouldn't reinstall the fog lights my car came with if he had so much difficulty with the new fog lights. And, beyond that, why would Lee even suggest to me that it was OK to take my car home as it was with the new fog lights causing the computer system to warn of an electrical error and also with the newly installed headlights malfunctioning (flickering on an off even when the car is turned off). </p></li>
+
+
+<br><br>
+<a name="09"></a>
+<li><b>Length 00:00:51</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/owner-found-fog-light-cables-that-were-not-installed.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+There may be something with these things here. I have no idea what these things are for. *** I don't know what you took that off of. *** Well, it it was in your car. *** They were all packaged together. *** Ok, so *** I guess, yeah. I don't know if he's came with the fog lights or the headlights because it may be that these things need to be put in line with the fog light bulb then that may eliminate the warning I know what's in there there's a resistor in there.</p>
+  
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>Lee just discovered the cables that came with the fog lights that were still sitting in the back seat of my car. The reason my car was reporting electrical errors and the reason the fog lights were malfunctioning (flickering even when the car was turned off) is because of Black Forest Werkshop negligence to properly install the replacement parts. Lee originally tried to convince me that the reason for the electical error message and electrical malfunction was because the parts i used were not factory OEM parts. He did offer to reinstall the original fog lights that were on the car becuase they still worked, he also recommended buying another set of fog lights and having his shop re-do the work.</p></li>
+
+<br><br>
+<a name="10"></a>
+<li><b>Length 00:00:15</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/notice-fog-lights-flicker-when-car-turned-off.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+Fog lights weird flickering. *** Yeah ***  Yeah, I noticed there's the flickering in the fog lights and the cars off. Wouldn't that drain my battery?</p>
+
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>XXXXX Still need to add personal commentary. XXXXX</p></li>
+
+<br><br>
+<a name="11"></a>
+<li><b>Length 00:01:20</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/personal-note-rear-unused-parts-found-lights-flicker-when-car-off-installing-overlooked-parts.mp3" target="_blank">
+Play Audio Clip</a><br>
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+When we were going through the parts that I brought that were sitting in the back of my car we found unplugged, unused parts, unused wires and used cables, and I noticed that the fog lights on the front of my car were flickering even though the car was not on, which I'm definitely concerned would cause some electrical errors or run down the battery of my car if there's lights that are always on. Anyway, Lee took a look at those wires decided that maybe they hooked up to the fog lights that he put into my car, the ones that I purchased, and maybe if we connect and he surmised that if we connect those wires, maybe that'll keep the error message addition showing up on the BMWs computer and stop the flickering. So, now he brought out, Lee and one of his shop hands are working on switching out walking on putting that little wire connector behind the fog lights and hopefully that will stop the flickering and that will keep the error messages from showing up on the car's computer.</p>
+
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>XXXXX Still need to add personal commentary. XXXXX</p></li>
+
+<br><br>
+<a name="12"></a>
+<li><b>Length 00:02:01</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/owner-technician-customer-work-to-fix-the-flickering-fog-lights.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+Before you turn the lights on before you turn them on its flickering and *** I don't see him flickering anymore. ***  Oh, that's good. Turn the car on but not little fog lights yeah, see they flicker before he turns the fog lights on? *** Oh, yeah, they're still flickering. *** You see that?  *** Yeah, they are. *** I don't see it anymore. ***  When the cars on they do before you turn the headlights on before we turn the fog lights on, it still flickers? *** Well, I could check in with junkyard guy and see if he's got a used driver's side or put the stock ones back in there. You could go back home with this. *** Yeah, I'm afraid of that causing any more damage to the battery or any other electrical components. *** It's all part of what happens when you start going with aftermarket stuff. *** That's the same stuff that I think StateFarm asks you to buy though aftermarket stuff. *** But they do that crap all the time. And you know what, I charge the hell out of them for having to mess with it.</p>
+
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>XXXXX Still need to add personal commentary. XXXXX</p></li>
+<!-- 
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>HE's BLAMING THE ELECTRICAL PROBLEMS WITH THE CAR ON THE AFTER MARKET PARTS AND NOT HIS NEGLIGENCE IN NOT INSTALLING THEM PROPERLY, IN ADDITION HE OFFERED TO PUT THE OLD FOG LIGHTS BACK IN BECAUSE THEY STILL WORK, OR HE GENEROUSLTY OFFERED TO LET ME GO HOME WITH THE FOG LIGHTS STILL NOT WORLKING PROPERLY</p></li>
+-->
+
+
+<br><br>
+<a name="13"></a>
+<li><b>Length 00:00:22</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/owner-offered-to-let-me-leave-with-the-electrical-issues-unresolved.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+Well, I could check in with junkyard guy and see if he's got a used driver's side or put the stock ones back in there. You could go back home with this. *** Yeah, I'm afraid of that causing any more damage to the battery or any other electrical components. *** It's all part of what happens when you start going with aftermarket stuff.</p>
+  
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>XXXXX Still need to add personal commentary. XXXXX</p></li>
+<!--
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>HE's BLAMING THE ELECTRICAL PROBLEMS WITH THE CAR ON THE AFTER MARKET PARTS AND NOT HIS NEGLIGENCE IN NOT INSTALLING THEM PROPERLY, IN ADDITION HE OFFERED TO PUT THE OLD FOG LIGHTS BACK IN BECAUSE THEY STILL WORK, OR HE GENEROUSLTY OFFERED TO LET ME GO HOME WITH THE FOG LIGHTS STILL NOT WORLKING PROPERLY</p></li>
+-->
+
+<br><br>
+<a name="46"></a>       
+<li><b>Length 00:00:46</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/owner-advising-me-on-how-to-repair-damage-he-was-hired-to-fix.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+How much are these pieces? *** No idea. I haven't even looked them up. You know, I figured the aftermarket ones of those ought to fit. They should just pop in there. And so if you want to just check to see how much they are. I mean it's easy enough just to pop them in place. *** That's what I thought I did that's for the ones that I brought *** Well they're just for the wrong front end. Okay, and sometimes BMW will change the production and how they do things in the middle of a year. It can be the same year model of car, but they'll change parts in the middle of production on how stuff is so you got to really watch the production dates to get that stuff done.</p>
+  
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>This was damage Black Forest Werkshop was hired to fix. The parts I supplied do fit. All parts came in pairs. The parts I purchased fit properly on the side of the car that was not damaged. The reason the replacement parts I purchased do not fit the side of the car that was damaged is because Black Forest Werkshop did a poor job repairing my vehicle. Lee is suggesting that that I drive off the lot with my car in the condition that it is in. </p></li>
+
+<br><br>
+        
+<a name="17"></a>
+<li><b>Length 00:00:17</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/owner-changes-story-admits-he-knew-about-the-fog-lights-flickering-before-i-pointed-it-out-to-him.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+Flickering, flickering *** That's just weird. *** I didn't really ever notice it until I got down on my knees and was looking at it that close with one of the guys that they flickered and I thought they were talking about when they just ran.</p>
+
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>Lee keeps changing his story regarding the electrical error and the malfunctioning of my fog lights. Originally he denied being aware of the flickering, but later he states that his technicians  told him about it before I arrived. Lee is also trying to convince me that the reason for this unexpected and poor quality of repair work is because the fog lights are not factory OEM parts rather than taking responsibility for his shop's own negligence in failing to properly install the new fog lights by attempting to install them without the cables they came with. When Lee's shop technician installed the cables that came with the fog lights the flickering ceased and the error message disappeared.</p></li>
+
+<br><br>
+
+<a name="16"></a>
+<li><b>Length 00:03:29</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/confusing-conversation-when-reviewing-the-final-invoice-i-dont-understand-anything-that-the-owner-is-explaining.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+Uhm, there's a chance that you can call this insurance company and tell them hey, you guys didn't pay the administrative fees for all the legwork Lee had to do on this thing. *** Can you document that out? So I know what I can ask them for like realistically because if I call them and say that then they might say well, how many hours did Lee do this? And I have Oh, is that marked down on there already? *** Yeah *** Okay. *** But I had asked them for 250 bucks only put 150 on there. And mostly that was in dealing with the insurance company but at least I got 415 bucks out of them which was good. The other part that they had screwed up was that there was an aluminum piece behind the front bumper that was bent back. And so they found a used one somewhere up in Fort Worth. And I think they said it was like 130 bucks. They said alright, it's 130 bucks. We'll pay you 25% Extra. Okay, what about shipping? Who's gonna pay for that? You know, so what am I gonna do? You know, jump through these hoops again, I have to call them. You know, it's just a nightmare dealing with these people, you know that. And so, I found one that I could have delivered, it costs a little bit more money between that part and adding the 25% that came up to the price of a new one, I was like, well, probably should have just put a new one in it, but it doesn't matter, it's as good as new. It's just an aluminum bar that goes back there. So the long and short of it is, is that they didn't pay enough for that part. *** They didn't pay enough for the the thing behind the bumper? *** Yeah, I'll highlight it. This one right here. I'm gonna just... I'm not going to highlight the 150 because they'll want a copy of this maybe. And so I'm not going to bring that to their attention by highlighting it. And you can tell them that you know, you you can tell them Well, I still owe him the 250 bucks. I need you to send me that money so I can pay him and if they send it to you, keep it and then the supplement thing they should have emailed you a copy of that supplement did they? It's when they do a supplement what they do is they send you the entire estimate over again and added on those things I don't know if they ever sent you a copy of that *** I would have to check with them. *** You can check with them and see things send you a copy and then that way you can see exactly how much of that $415 They have budgeted for that I think this is gonna be a little bit more so they can owe you a few more bucks for that.</p>
+  
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>This is part of the conversation Lee and I had at check out when we were reviewing the final bill. I am confused by this conversation and even through listening in retrospect I do not understand what is going on. I do not understand why he is presenting a bill to me that he claims does not accurately reflect the work that was done or the work that needed to be done. i do not understand all of the different changing price points he is mentioning or why they are being discussed. I am not sure which parts of my final invoice Lee says are correct and which are incorrect.</p></li>
+
+<br><br>
+
+<a name="17"></a>
+<li><b>Length 00:01:49</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/finding-out-how-much-was-owed.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+There's a balance of $2268.46 *** Oh, uh, you told me $2051.96 and that was the, this is the amount that you told me on the phone before I came here so the check was pre-cut. *** Okay. So then that's still gonna leave *** Yeah, twenty, that's the amount that you gave me on the phone this afternoon right when you said that my car was ready to come pick up *** Yeah, I totaled it up but I just didn't have that used headlight put in there. *** I'd have to go home to get another check or, I came prepared with the amount that you told me to bring. *** Okay. Well, I probably should have called you and told you before you came down here. *** Is that *** So that's how much the remaining is *** Can I uhm, can I borrow one of these *** Sure. And I apologize I had completely forgotten about that. Josh normally puts parts on tickets. I really don't do his job. He usually puts them there, but he wasn't involved in getting these headlights. *** Oh, okay *** and then after he had it all totaled up he was like Hey, did you get that headlight on there? Nope, that's ok, ha ha, shit!</p>
+  
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>Delivery of the final bill and "payment."</p></li>
+
+<br><br>
+
+<a name="18"></a>
+<li><b>Length 00:00:05</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/your-car-looks-good.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+Anything else I should know about my car? *** The car looks good.</p>
+  
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>The shop owner is pleased with the repair work his shop completed on my car.</p></li>
+
+<br><br>
+<a name="19"></a>
+<li><b>Length 00:01:02</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/implies-the-delay-was-my-my-fault-extended-rental-car-time-wasnt-easy.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+Alright, Jaden, well, I think apologizing for taking as long as it is did might be an order so, I'm sorry it dragged out as long as it did. And uh, my tip for the future, never tell anybody to take their time. It is like, well, you know not hurry. I got this rental car for as long as I need it. And you know, honestly, I didn't think you were in a rental car. I thought you were in a family member's car. Somebody loaned you a car? I didn't think rental car was really anywhere in the picture. *** Oh, no, it was a big ordeal when I dropped my car off to get the rental car here. *** Right? I remember that. Yeah, so but I figured that maybe you had access to the car because honestly, insurance companies and rental cars they're usually like after 10 days. They're done. They don't want to pay any more for the rental car. So whatever you did to get a rental car for as long as you had it. You definitely got way more than I've ever seen anybody else get. *** It wasn't easy.</p>
+  
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>He knew I was in a rental car, he received regular concerned updates from me. I even spke with the insurance company to see if they could bill him for such an extended renatl period. I brought this up to Lee as well including my concerns about paying for my rental car out of pocket. He just said, that these delays couldn't be helped. This is the first time he apologized for anything and even in this apology he somehow manages to imply that I am at fault for his shop taking 84 days to do the front body work he did.</p></li>
+
+<br><br>
+
+<a name="20"></a>
+<li><b>Length 00:01:08</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/rear-bumper-not-repaired-front-bumper-not-replaced-trying-to-get-more-from-insurance.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+So uh, so yeah, and I know that the end bodywork isn't an absolutely perfect you know, we talked about that in the beginning. You know Dominique does the workout side over there? *** Well the end body work wasn't done at all. You said that you skipped that part all together. *** Well the the front end. The front bumper and all that stuff. *** I thought you were talking about the rear bumper. ***
+Oh yeah, fixing that whole front bumper, you know, I hope you like it, I think he did a pretty good job. All things considered considering what he had to work with that front bumper was pretty mangled up. And he got it straightened up pretty good. You know, just stay away from the curb. *** So he didn't, he didn't have to, like replace it with a bumper cover. Like, you don't have to replace any of the parts for the bumper, you fixed your original one. He fixed the original one he didn't actually buy. So then you just needed that little metal piece behind the bumper, or you didn't actually need any parts for the bumper. *** Yeah. And honestly, I mean, I I called in, I was trying to get more money out of the insurance company for you, I wanted to get as much as I could out of them for you to discount this down. And I didn't get it nearly as much as I tried to.</p>
+  
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>XXXXX Still need to add personal commentary. XXXXX</p></li>
+
+<br><br>
+
+<a name="21"></a>
+<li><b>Length 00:00:25</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/i-have-concerns-that-my-fog-light-cables-are-just-hanging-and-not-secured-to-something.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  So the original cables, I guess the original cables that were plugged into the foglights, were they hanging, or were they somehow just pushed up like taped or to something on the inside of the car? *** No, they were just kind of hanging down there. *** The wires were always just hanging down there. *** Okay *** They're just always kind of flopping around. *** Maybe I'll go buy some duct tape and hang them up or something. *** I'm sure they'll be fine.</p>
+  
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>After watching Lee's technician, Jonathan attach the missing cables to the fog lights I had some concerns because he left the cables loose and hanging. I assumed that my fog light cables, if installed properly, would have been securely mounted against the side of the car and not left dangling. BMW's are emaculate, all of the hoses and cables throughout my vehicle are neatly and tighly mounted into place, except the cables Black Forest Werkshop worked on. </p></li>
+
+<br><br>
+
+<a name="22"></a>
+<li><b>Length 00:00:24</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/referring-me-to-the-salvage-guy-to-buy-parts-for-repairs-he-was-suppossed-to-do.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+  Right, we'll check with Russell and ask if he has, send him a picture of your front bumper and say, I would like to know if you have a used grille. For my front bumper *** The fog light trim *** Yes. If you have that. Okay, if you're not happy with those fog lights, then ask them also. So do you have a used driver side fog light.</p>
+  
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>Lee is recommending that I reach out to his salvage supplier, Russell, to see if Russell can sell me the missing fog light trim replacement parts still missing from my car after Black Forest Werkshop's "repairs." Black Forest Werkshop was suppossed to do this repair, and I did pre-purchase the part we are discussing, I purchased the part as a 'pair,' one for the left side of the car and one for the right side of the car. The part I purchased fits the side of the car that was not damaged. The reason Lee can't get the fog light trim to fit the side of my car he repaired is because it was not properly repaired, it is still misshapen. None-the-less, he is referring me to his salvage supplier to do a repair he was hired to do. </p></li>
+
+<br><br>
+<a name="23"></a>
+<li><b>Length 00:00:19</b> | 
+  <a href="https://dtpa.github.io/lawsuit/audio/i-dont-ever-get-involved-in-body-repair-stuff.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  <div class="law">
+      I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+      <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+  </div>
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+    Alright, Jaden, I'm glad you're finally back in your car *** Me too *** Yeah, I think Josh would prefer that I don't ever get involved in any body repair stuff. I'm just trying to help people out, you know, try to help you out with a good price to get this stuff done.</p>
+    
+  <p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>"I don't ever get involved in body repair stuff." Aside from my car, Lee just said that he has another car that needs body work done that he's waiting to outsource to Jeff's body shop in January.</p></li>
+  
+  <br><br>
+  <a name="24"></a>
+  <li><b>Length 00:02:43</b> | 
+    <a href="https://dtpa.github.io/lawsuit/audio/discussion-about-why-the-cost-kept-going-up.mp3" target="_blank">
+    Play Audio Clip</a><br> 
+    <div class="law">
+        I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+        <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+    </div>
+    <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+So actually, I'm kind of confused as why was before you had the disagreement with the insurance company, why was my pickup price $826. The one that you said in the email you're like, Okay, I think we're ready to go. We're all ready to start deal. Oh, $826 Why is it now two over $2000. *** us talking and he was saying something about that you didn't want to get the hood fixed. *** Was that was another part of the insurance thing. I Dominique, when he remembered he was standing out here with *** No, I mean, no, this is this is like beyond that, like after we had already been talking for well over like 45 days in, and I got an email from you and we thought that everything with the insurance company was fine. And you sent me an email saying, Okay, I think we're good to go. Are you ready to pay me? Do I have your permission to start working on the car? And I said yes. And you're like, great, it'll be $826, why is it now $2200 *** Yeah *** Because nothing in the car is change that the only thing that's changed is that I *** A lot of it was taken the front bumper back apart and put it in this original headlights back in *** That bumped it up over $1,300? *** I've got it all itemized, and there wasn't that much. There's that other bumper piece. And then trying to get more out of the insurance company I had planned on getting a certain amount from the insurance company I need to get that much out of them. And that was going to reduce how much you're going to owe. *** Because that's more than well over double it goes from the $825 to $2050 about $2156 to two over $2200 now so it's just like every time I talk to you the numbers go up and I'm just really confused how it went from $825 like we had an email that said we can do it we're ready to go in $825 is going to be good because I now now you're quoting *** no part of it was Dominique hadn't planned on repairing the hood because he was remembering and you know I based my original conversation with you off of what he had told me he *** was gonna charge but I never talked to him I only talked to you  *** no, you did talk to him that day he was here *** he is he's not even, yeah, you're the person that is the, is, I still have someplace I need to be a five o'clock though so oh I'm so sorry. I don't mean to block your way</p>
+      
+    <p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>I asked Lee to explain the rising costs.</p></li>
+    <br><br>
+    
+</ol>
+
+<h3>Comments of General Question or Concern</h3>
+<ol start="25">
+  <a name="25"></a> 
+<li><b>Length 00:00:07</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/back-when-we-had-a-body-shop.mp3" target="_blank">
+Play Audio Clip "A"</a>, and<br>
+<b>Length 00:00:35</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/jeffs-bodyshop-booked-till-january.mp3" target="_blank">
+Play Audio Clip "B"</a>, and<br>
+<b>Length 00:00:19</b> | 
+  <a href="https://dtpa.github.io/lawsuit/audio/i-dont-ever-get-involved-in-body-repair-stuff.mp3" target="_blank">
+  Play Audio Clip "C"</a> 
+<div class="law">
+    I believe these audio clips can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION "A"</b><br>
+And this was back we actually had a body shop that big white building over there was our body shop. We used to be across the street.</p>
+
+<p class="audiotext"><b>AUDIO TRANSCRIPTION "B"</b><br>
+  The reality of it is like, if you wanted this car, like looking like it just came off the showroom floor. Then it would have gone over to Jeff's Body Shop. *** Jeff's Body Shop *** Jeff's body shop? *** He does immaculate work. *** Where's he located? *** He's overthere on Lamar, and so had we gone that route. What would have happened in the car would still be there, by the way. *** They have a long line? *** Yeah, I just called it a one on one, and I can't even get the car over there until January. </p>
+
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION "C"</b><br>
+    Alright, Jaden, I'm glad you're finally back in your car *** Me too *** Yeah, I think Josh would prefer that I don't ever get involved in any body repair stuff. I'm just trying to help people out, you know, try to help you out with a good price to get this stuff done.</p>
+
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>Why is Lee taking on business for customers with body damage if his shop no longer directly provides body damage repair services? Why is Lee negotiating the cost of repairing body damage with the insurance companies and customers if his shop is not the company doing the repair work, and what control does Lee have over scheduling/prioritizing a any aspect of a customer's body repair if his shop isn't the one doing the repair work?</p></li>
+
+<br><br>
+<a name="26"></a>
+<li><b>Length 00:00:39</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/i-charge-the-hell-out-of-them-for-having-to-mess-with-it.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+Or put the stock ones back in there. To go back home with this. You could go back home with this. *** Yeah, I'm afraid of that causing any more damage to the battery or any other electrical components. *** It's all part of what happens when you start going with aftermarket stuff. *** That's the same stuff that I think StateFarm asks you to buy though aftermarket stuff. *** But they do that crap all the time. And you know what, I charge the hell out of them for having to mess with it. I get them from all kinds of computer time and testing and diagnosing and blah, blah, blah and ultimately call and say now do you want me to put the stock ones in?</p>
+
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>XXXXX Still need to add personal commentary. XXXXX</p></li>
+
+<br><br>
+  
+<a name="27"></a>
+<li><b>Length 00:01:00</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/build-a-bmw-by-ordering-each-part-alone-costs-half-a-million-dollars.mp3" target="_blank">
+Play Audio Clip</a><br> 
+
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+That guy just left here driving since I got him I used one of these controller wheels. And he said you know what? After I'd warned him about use parts he said just order a new one Lee. I said, thank you, <b>Mike</b>. problem with these cars when they're on the showroom floor or What was this about a $40,000 car 35,000 40,000 maybe 45,000. *** For a BMW, I'm sure. Yeah. *** But if you went to the parts counter and said, I want to buy that car, but I want to buy it in parts because I'm gonna go home and build it myself because I like building cars. And they sold you all the parts for this car over the counter. This will turn into a half a million dollar car this in parts alone the parts prices will cost probably a half a million dollars.</p>
+  
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>This sound clip sounds like it might provide Lee's logic, reasoning, and/or <font color="red"><b>motivation</b></font> for running certain aspects of his business the way that he does. It sounds like there is a lot of money that can be made through the purchasing of parts, especially the re-purchasing of OEM factory parts when his shop's original repair work fails to meet his customer's base level of satisfaction. Per his 11/17/2021 email Black Forest also charges a 30% mark-up on parts whenever they are able to do so when it appears that the indusrty standard is 25%.</p></li>
+
+
+</ol>
+
+
+<h3>Stories About Other Business Dealings with Customers and Insurance Companies</h3>
+<ol start="28">
+  <a name="28"></a>
+<li><b>Length 00:02:10</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/they-paid-us-twice-to-do-that-job.mp3" target="_blank">
+Play Audio Clip</a><br> 
+
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+Some guy came in. And I think it was GEICO or Progressive. And they wouldn't let us put genuine parts on the guy's car. And I told him I said you can pay the difference. So we'll use genuine parts. I said, But these aren't gonna fit, right. And he was like, Well, I'm not paying any more than my deductible. So use whatever they tell you to use, which was the right way for him to go. Because the way it worked out was when he went to came pick up this car. He was running his hand down, like look, there's a gap here, right there and blah, blah. And he want us to try to readjust them. And I said, now we've adjusted them as good as they can be. I said now what you have to do is call your adjuster meeting back over here. I said I want you to meet him with me here. You don't want to meet him by yourself because it'll snowball you. So fortunately, that meeting worked out. The guy showed up with his car on time the adjuster was there on time. And so the adjuster actually admitted yeah, these don't fit. And he looked at me and he said, Why didn't y'all test it these pieces before you painted it? And I said show me on your paperwork that you were gonna pay me to test fit this stuff. I said you already know I said you just admitted that, you know, these aftermarket parts don't fit. And now you're telling me I should have tested them? I said no, I don't do that. You know, unless you're gonna pay me to do it. I'm not gonna do it. The adjuster was like, well, I'll pay for factory parts, but I'm not paying you to paint him again, not flicked at the owner of the car, I said, I hope you like Primer Gray, because that's how they come. And if he's not paying me to paint them, then we're not painting them. And the poor owner of the car, you know, the consumer shouldn't get stuck in the middle of this garbage. And that poor guy was like, he didn't know what to do. And the adjuster said, I can't believe how some people run their businesses. And I said, Now you just said something that I think we both can agree on. I said, I can't believe how you guys run your business. And he finally agreed to completely redo the whole front end work that we had done. So we put factory parts on, we repainted it, and everything. And they paid us twice to do that job.</p>
+
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>My experience with Black Forest Werkshop and Lee's stories all have a very familiar feel to them by this point. It seems as though he repeatedly engages in questionable behaviors that lead to customers being unhappy with the quality of work his shop does and then convincing the insurance companies and his customers to let him re-do the work a second time using more expensive parts. </p></li>
+
+<br><br>
+  
+<a name="29"></a>
+ <li><b>Length 00:01:59</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/recruiting-grooming-paying-customers-to-assist-in-insurance-fraud.mp3" target="_blank">
+Play Audio Clip</a><br> 
+
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+We had one insurance company. So they were given us the runaround, on just replacing a windshield. And after going through three different windshield companies, we finally got the windshield in and it took months to get this done months. It was unbelievable how long, the car would still be here. If I wasn't the one who kept calling saying what do I want to do whatever I want to do. And then the way it normally works, is whatever the stuff is they tell us to use, they already know how much our cost is. And they pay us 25% above whatever our cost is for our profit margin. And the windshield, the guy's car. And so I called Binswanger. I said, Hey, you guys didn't leave an invoice, I need to pay you for this. And they said, Oh, we've already been paid. I said, Who paid you and they said, well, the insurance company is paying us directly. So they totally screwed me out of any penny I ever hoped to make on getting that windshield done, you know, for all my management stuff and everything. And so I called the owner and told him, I said, I need you to help me out with this. I said, I'm not going to do this. But I want you to kind of go along with it. I said you don't owe me any favors. This is a business. I said, so what I'm going to do is I'm going to pay you 25% or whatever I get out of these bastards. And they said, Okay, what do you want me to do? I said, call him up and tell them that I'm going to sell your car to pay for the storage fees. Because I've been storing the car here while they're guys not been getting the jobs done. And in the end, the insurance company paid me over $3,000 for storage. And if they would let me just do the windshield, it would have been 1200 bucks. And so I paid the owner of the car, I didn't charge him his deductible, I gave him an extra 250 bucks, and I kept the rest of the money. And that's how it goes with this insurance stuff. I mean, it's it's crazy.</p> 
+   
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>My experience with Black Forest Werkshop and Lee's stories are still resonating with my own experiences with him. Lee made a similar offer to me. We discussed storage fees and leveraging the componding storage fees as a bargainig chip to try to convince StateFarm to approve a high payout.</p></li>
+
+<br><br>
+<a name="30"></a>
+<li><b>Length 00:00:27</b> | 
+  <a href="https://dtpa.github.io/lawsuit/audio/rats-temperature-sensor.mp3" target="_blank">
+  Play Audio Clip</a><br> 
+  
+  <div class="law">
+      I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+      <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+  </div>
+  
+  <p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+    There was a temperature sensor on one guy's car the other day, and a mouse had gotten in there and chewed it up, and it had been like that for months. He brought the car in and we fixed it, and then he called me two days later and said I don't think your guy did a good job, this temperature sensor is not reading right again. They brought it over. We took the new temperature sensor out it was chewed up again. I said, your little friends the rats like this temperature sensor.</p> 
+     
+  <p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>Another story of a Black Forest Werkshop customer who was dissatsfied with the results and had Lee re-do the work, it sounds like he paid for multiple parts. So far, Lee has not shared one story with me about a completely satisfied customer. Every story is involves long turn around times, complicated insurance interations, disatisfied customers, and/or re-doing work. This is also another example where I wonder if Lee replaced the car part in question with a new part.</p></li>
+  
+  <br><br>
+  
+  <a name="31"></a> 
+<li><b>Length 00:00:20</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/another-example-of-redoing-work-buy-parts-twice-do-labor-twice-reason-aftermarket-parts.mp3" target="_blank">
+Play Audio Clip</a><br> 
+
+<div class="law">
+    I believe this audio clip can be used on its own, or in conjunction with other information, to support my claims that Black Forest Werkshop knowingly and regularly engages in several of the unlawful business practices listed in Section 17.46 of the DTPA that cause consumers (others and myself) and insurance companies to suffer actual damage as a result of all of the following:<br><br>
+    <b>[A]</b>  False/misleading/deceptive act, <b>[B]</b>  Breach of contract/warranty, <b>[C]</b>  Unconscionable action, <b>[D]</b> Insurance Code Violation
+</div>
+
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+That guy just left here driving since I got him I used one of these controller wheels. And he said you know what? After I'd warned him about use parts he said just order a new one Lee. I said, thank you, <b>Mike</b>.</p>
+  
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>My experience with Black Forest Werkshop and Lee's stories are still resonating with my own experiences with him. This is another example of Lee doing and billing for work completed with non-OEM parts where the customer, Mike, was dissatisfied with the results and Lee convinced the customer to re-do (and re-bill) for the work.</p></li>
+<ul> 
+<li><b>(continuation) Length 00:01:10</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/customer-mike-called-in-wanting-to-know-if-his-repairs-were-done-with-new-parts.mp3" target="_blank">
+Play Audio Clip</a><br> 
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+Black Forest *** Hey, <b>Mike</b>, yeah good, Lee. *** Alright man. I got a total of $428.41. *** It's, what do you mean? The whole knob is all brand new. *** Oh, is it around the edge? Yeah, okay, well, I guess he could have done a better job of cleaning it before he put that new one in there. Yeah, yeah, it's definitely the new one, yeah. Okay, bye, okay, thank you.</p>
+  
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>The customer Lee just spoke with me about called back into the shop while Lee and I were instide revieweing my final invoice. It seems that the customer, <b>Mike</b>, called back in because even Lee's second attempt at repair work left his customer dissasisfied with the results. <b>Mike</b> called in after leaving Black Forest Werkshop seemingly uncertain rather or not the 'new OEM' navigation knob Lee installed in his car the second time around was actually a new part or a used/recycled part that Lee was presenting as 'new.' After Lee acknowledged that to me that the fog lights he originally took off my car still worked, Lee asked if I wanted to leave my original working fog lights with him by placing them in his "recycling." I didn't leave my 'still working' fog lights with Lee because I didn't want him to resell them to another customer (Length 00:00:27</b> | 
+  <a href="https://dtpa.github.io/lawsuit/audio/recycle-the-still-usable-foglights.mp3" target="_blank">
+  Play Audio Clip</a>).</p>
+  </li>
+
+</ol>
+<p><br></p>
+
+<div class="notouch">
+<h3>Repair Shop Refuses to "Touch" My Car to Create a Repair Estimate Because of Bad Repair Work Done By Another Shop</h3>
+<a name="caliber"></a> 
+<li><b>Length 00:13:59</b> | 
+<a href="https://dtpa.github.io/lawsuit/audio/Full-Audio-Caliber-Collision-20220926.mp3" target="_blank">
+Play Audio Clip</a><br> 
+
+<p class="audiotext"><b>AUDIO TRANSCRIPTION</b><br>
+Click to view the <a href="https://dtpa.github.io/lawsuit/audio/Full-Audio-Caliber-Collision-20220926-TRANSCRIPT.txt" target="_blank">text transcription file</a> in another browser window.</p>
+    
+<p class="audiocomment"><b>PERSONAL COMMENTARY</b><br>I took my BMW to Caliber Collision Onion Creek, a certified BMW repair facility, to get an estimate on how much it would cost to do the original repair work Black Forest Werkshop failed to do, and to fix the additional damage caused by Black Forest Werkshop. Caliber Collisions refused to lay a hand on my car, even to asses the damages to provide a repair estimate because they did not want to inadvertantly put themselves in a position where they might be held legal liable for that damages caused by Black Forest Werkshop. Caliber Collision's said that even if I agreeded to pay the full cost of the repair out-of-pocket, it would be difficult to find a quality repair venue who would even be willing to work on my BMW given its current circumstance of being grossly damaged as a result of a "botched" repair job completed by a different repair shop, espcially since BMW's are technically nuanced and expensive cars.</p></li>
+</div>
+
+<p><br></p>
+<center><a href="#top"><img src="https://dtpa.github.io/lawsuit/site/back-to-top-simple.png" width="60px" alt="back to top"></a></center>
+<h2><a name="photos">Section F: Photos</a></h2>
+
+<h3>BEFORE: Day I dropped it Off at Black Forest Werkshop for Repair</h3>
+<p>The replacement parts that I pre-purchased for Black Forest Werkshop to use were neatly placed in the backseat of my car. I purchased a protective liner to store the parts so they would be easy to find, not fall and get hidden underneath the seats, and to protect the leather of my car.</p>
+
+<p>
+  <a href="https://dtpa.github.io/lawsuit/photos/Delivered-01.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/Delivered-01.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/Delivered-02.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/Delivered-02.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/Delivered-03.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/Delivered-03.jpg" width="30%"></a>
+
+    <a href="https://dtpa.github.io/lawsuit/photos/DisplayScreen.bmp" target="_blank">
+      <img src="https://dtpa.github.io/lawsuit/photos/DisplayScreen.bmp" width="30%"></a>
+  </p>
+  <hr>
+  <p><br></p>
+
+<h3>BEFORE: Photos Taken by State
+  Farm Insurance When They Went to Black Forest Werkshop to inspect My Car</h3>
+<p>A State Farm insurance adjuster visited Black Forest Werkshop on 09/27/21, and then again on 11/02/21 per the request of Harvey Lee Rector, to review and assess the damages to my car. I called State Farm on 09/26/22 to get a copy of the photos their adjuster took. </p>
+<!--<div class="indent"><p>Click <a href="https://photos.app.goo.gl/6nv3Mmhuc57j4WSg9" target="_blank"><b>here</b></a> to see the photos taken by the insurance company.</p></div>-->
+
+<p>
+  <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-01.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-01.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-02.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-02.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-03.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-03.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-04.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-04.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-05.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-05.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-06.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-06.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-07.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-07.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-08.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-08.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-09.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-09.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-10.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-10.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-11.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-11.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-12.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-12.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-13a.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-13a.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-14.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-14.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-15.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-15.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-16.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-16.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-17.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-17.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-18.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-18.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-19.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/InsurancePhoto-Before-19.jpg" width="30%"></a>
+  
+</p>
+<hr>
+<p><br></p>
+<h3>AFTER (video clip): Video by BMW South Austin</h3>
+<div class="indent"><p>Click <a href="https://api.mykaarma.com/video-walkaround/details?inspection_uuid=6334a31c2c91f02b68959b9c&fileType=image_and_video" target="_blank"><b>here</b></a> to watch a short video by BWM South Austin where they prove that Black Forest Werkshop used broken salvaged parts to "frankenstein" the repair to my driver's side headlight. NOTE: BMW hosts this video for a limited time only, you may need to watch the backup copies of the video linked below.</p>
+	
+	<span id="mark">Archived/Backup Copies of the Official BMW of South Austin Video<br>
+	    <a href="https://drive.google.com/file/d/1AD_Y17xZNBAjsWOH8rdoIp4ta4Lv72pf/view?usp=share_link" target="_blank">Full Screen Capture Version</a> & <a href="https://drive.google.com/file/d/1EO9U3oPLHvb0ppP2CjmdDGQO6JMqzOyC/view?usp=share_link" target="_blank">Regular Screen Capture</a></span>
+
+</div>
+<p><br></p>
+<hr>
+<p><br></p>
+
+<h3>AFTER: What My Car Looked Liked After Retrieving it from Black Forest Werkshop</h3>
+<!--<div class="indent"><p>Click <a href="https://photos.app.goo.gl/Au1itHuNM6GHRjtW7" target="_blank"><b>here</b></a> after photos taken by me.</p></div>-->
+
+<p>
+  <a href="https://dtpa.github.io/lawsuit/photos/After-01-front-bumper-after-repairs-by-bfw.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/After-01-front-bumper-after-repairs-by-bfw.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/After-02-rear-bumper-damage-01.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/After-02-rear-bumper-damage-01.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/After-03-rear-bumper-damage-04.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/After-03-rear-bumper-damage-04.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/After-04-quality-of-craftsmanship-after-repair.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/After-04-quality-of-craftsmanship-after-repair.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/After-05-drivers-side-seat-after-repairs.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/After-05-drivers-side-seat-after-repairs.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/After-06-fog-light-wires-after-repair.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/After-06-fog-light-wires-after-repair.jpg" width="30%"></a>
+    
+    <a href="https://dtpa.github.io/lawsuit/photos/After-07-cracked-lcd-after-repairs.jpg" target="_blank">
+    <img src="https://dtpa.github.io/lawsuit/photos/After-07-cracked-lcd-after-repairs.jpg" width="30%"></a>
+	
+	<a href="https://dtpa.github.io/lawsuit/photos/After-08-headlight-condensation.bmp" target="_blank">
+	<img src="https://dtpa.github.io/lawsuit/photos/After-08-headlight-condensation.bmp" width="30%"></a>	
+</p>
+
+<p><br></p>
+<hr>
+<p><br></p>
+
+
+
+
+<h3>Front Bumper : Before Repairs (left), In-Picture Embedded Commentary (middle), and After Repairs (right)</h3>
+
+<div class="indent">
+<p>My vehicle was at Black Forest Werkshop for 84 days. These images show what my car looked like before I dropped the car off for repairs and what it ultimately looked like when I left the repair shop with my vehicle. My car looked different when I arrived at the shop on December 18, 2021 to pick up my car. While I was there to pick up my vehicle I had Black Forst Werkshop address some of my outstanding concerns. I had them complete some of the work they missed and repair some of new issues they created before I left with my vehicle. My car was in the shop for 84 days to repair what my insurance company and other body shops have labeled "common" and "minor body damage" that would normally take only a few days to repair.</p>
+</div>
+<div><center>
+<p class="quote">
+  <b>"...fixing that whole front bumper, you know, I hope you like it, I think he did a pretty good job. All things considered considering what he had to work with that front bumper was pretty mangled up. And he got it straightened up pretty good."</b>
+  <br><br><i>-Lee Rector, Owner of Black Forest Werkshop</i></p>
+<p>What's with this gaslighting, are we talking about the same car?</p>
+  </center></div>
+  
+<center>
+  
+<a href="https://dtpa.github.io/lawsuit/photos/front-bumper-damage.jpg" target="_blank"><img src="https://dtpa.github.io/lawsuit/photos/front-bumper-damage.jpg" width="30%"></a>
+
+<a href="https://dtpa.github.io/lawsuit/photos/front-bumper-damage-captioned.jpg" target="_blank"><img src="https://dtpa.github.io/lawsuit/photos/front-bumper-damage-captioned.jpg" width="30%"></a>
+
+<a href="https://dtpa.github.io/lawsuit/photos/front-bumper-after-repairs.jpg" target="_blank"><img src="https://dtpa.github.io/lawsuit/photos/front-bumper-after-repairs.jpg" width="30%"></a>
+	
+	
+	
+
+</center>
+
+<p class="imagetext">
+<b>The <font color="red">red text</font> embedded in the middle image above reads:</b>
+<br>
+<br>
+Prior to choosing Black Forest Werkshop, and on the day I dropped my car off for repairs, the shop owner, Lee Rector, said that he could repair my car using parts I purchased. After having my vehicle for over 70+ days he then changed his tune, gave various excuses why he couldn't use the parts i purchased, why they would not work and tried to sell me parts with a 30% up charge (profit margin). It was now too late to return the parts I purchased. All of the parts I purchased do fit and work with my car.
+<br>
+<br>
+1) On December 13, 2021 on a three-way call with StateFarm the shop owner said the reason my car still wasn't finished was because he needed a replacement headlight. on that call he offered to procure a used headlight to 'finish up' the repairs and have the car ready for me by the 15th. StateFarm agreed to extend my rental car through Dec 15th (80 days of car rental). My vehicle was not ready on the 15th. on the 18th the shop owner presented me with a final bill that charged me twice for the headlight parts.
+<br>
+<br>
+2) When I arrived to pick up my car I was suprised to find the original gray colored front grill pieces had been reinstalled. I purchased black grill replacement parts which were sitting on top of the back seat of my car. I convinced the shop owner, Lee Rector, to 'try' to install the black parts I originally asked him to use. He did. They installed the front black grill parts while I watched. This should have been completed before I arrived to pick up my car.
+<br>
+<br>
+3) The fog lights I purchased were used by Black Forest Werkshop to complete my repairs, but they were negligently installed. The car registered an electrical error and the fog lights flickered on and off even when the car was turned off. Even though the shop owner offered to let me take my car home with the unfinished repairs and these new electrical defects, I refused to leave until they fixed the electrical issues, which they did as I watched and assisted. The fog light trim pieces I purchased were not installed either. When I arrived to pick up my car I was suprised to find that the front [and the back] of my car still looked like it had been in an accident. The shop owner gave me instructed on how to find these missing front pieces and install them myself.</i>
+</p>
+
+<h3>Front Bumper : Example of the Quality of Repair Work Completed</h3>
+<center>
+ 
+<a href="https://dtpa.github.io/lawsuit/photos/quality-of-craftsmanship-before-repairs-captioned.jpg" target="_blank"><img src="https://dtpa.github.io/lawsuit/photos/quality-of-craftsmanship-before-repairs-captioned.jpg" width="30%"></a>
+	
+<a href="https://dtpa.github.io/lawsuit/photos/quality-of-craftsmanship-after-repairs-captioned.jpg" target="_blank"><img src="https://dtpa.github.io/lawsuit/photos/quality-of-craftsmanship-after-repairs-captioned.jpg" width="30%"></a>
+	
+<br>
+<a href="https://dtpa.github.io/lawsuit/photos/headlight-condensation-comparison-photo.jpg" target="_blank"><img src="https://dtpa.github.io/lawsuit/photos/headlight-condensation-comparison-photo.jpg" width="60%"></a>
+</center>
+
+<h3>Rear Bumper : Before and After (84 days later) Pictures are Identical</h3>
+<div class="indent">
+<p>Note: I fully expected my rear bumper to be repaired and was suprised to find that no repair work at all was completed on my rear bumper eventhough I was expecting it to be fully repaired. The rear of my car looks exactly the same as it did before I dropped my vehicle off for repair and after picking the car up 84 days later from the repair shop. </p>
+</div>
+<center>
+  
+<a href="https://dtpa.github.io/lawsuit/photos/rear-bumper-damage-01.jpg" target="_blank"><img src="https://dtpa.github.io/lawsuit/photos/rear-bumper-damage-01.jpg" width="20%"></a>
+  
+<a href="https://dtpa.github.io/lawsuit/photos/rear-bumper-damage-02.jpg" target="_blank"><img src="https://dtpa.github.io/lawsuit/photos/rear-bumper-damage-02.jpg" width="20%"></a>
+
+<a href="https://dtpa.github.io/lawsuit/photos/rear-bumper-damage-03.jpg" target="_blank"><img src="https://dtpa.github.io/lawsuit/photos/rear-bumper-damage-03.jpg" width="20%"></a>
+
+<a href="https://dtpa.github.io/lawsuit/photos/rear-bumper-damage-04.jpg" target="_blank"><img src="https://dtpa.github.io/lawsuit/photos/rear-bumper-damage-04.jpg" width="20%"></a>
+
+</center>
+
+<p><br></p>
+<center><a href="#top"><img src="https://dtpa.github.io/lawsuit/site/back-to-top-simple.png" width="60px" alt="back to top"></a></center>
+<h2><a name="documents">Section G: Scanned Documents (and Official BMW of South Austin "Walk Around Video")</a></h2>
+
+<ul>
+  <li><a href="https://dtpa.github.io/lawsuit/docs/Auto_PI_Used_Car_Investigations_Jul_8_2021_JADEN RILEY.pdf" target="_blank">Auto P.I. Used Car Investigations</a>
+  <ul>
+  <li>July 8, 2021, the day I purchased this BMW</li>
+  <li>600-point bumper-to-bumper used car inspection performed by an ASE master technician</li>
+  <li>Seventy nine (79) days later I left my car with Black Forest Werkshop on September 25, 2021.</li>
+  <li><b>This document can be used to help establish a comprehensive basis for the condition of my vehicle when I purchased it.</b></li>
+  </ul></li>
+  <br><br>
+
+
+
+    <li><a href="https://dtpa.github.io/lawsuit/docs/BMW_South_Austin_Vehicle_Condition_Report_SEP_2022.pdf" target="_blank">BMW South Austin Vehicle Condition Report</a>, AND<br>
+      <a href="https://api.mykaarma.com/video-walkaround/details?inspection_uuid=6334a31c2c91f02b68959b9c&fileType=image_and_video" target="_blank">BMW South Austin Vehicle Walk Around Video</a> (<i>official/original web posting by BMW of South Austin</i>), AND<br> 
+	    <span id="mark">Archived/Backup Copies of the Official BMW of South Austin Video<br>
+	    <a href="https://drive.google.com/file/d/1AD_Y17xZNBAjsWOH8rdoIp4ta4Lv72pf/view?usp=share_link" target="_blank">Full Screen Capture Version</a> & <a href="https://drive.google.com/file/d/1EO9U3oPLHvb0ppP2CjmdDGQO6JMqzOyC/view?usp=share_link" target="_blank">Regular Screen Capture</a></span>
+    <ul>
+    <li>September 26-28, 2022 </li>
+    <li>Diagnostics and inspecation report from BWM South Austin.</li>
+    <li>Informed by a reputable auto repair facility that they would not "lay hands" on my vehicle to re-do or correct work done by another repair facility without first having a full diagnostic and inspection from BMW to establish a basis for the condition of my car to help protect themselves from liabilty. </li>
+    <li>This document provides proof that Black Forest Werkshop and Lee Rector repair their customer's vehicles with salvaged and broken/damaged replacement parts that hold no monetary value to individuals trying to get their vehicles repaired. Black Forest Werkshop charges customers for these salvage/junk parts with a 30% markup of whatever price they internally set as a basis. </li>
+    <li><b>This document can be used to help establish a basis for the electrical status and interior condition of my vehicle after retrieving my car from Black Forest Werkshop.</b></li>
+    </ul></li>
+    <br><br>
+
+
+    <li><a href="https://dtpa.github.io/lawsuit/receipts/Estimate_Caliber_Collision_Repair_OCT2022_Front_$3769.72.pdf" target="_blank">Caliber Collision Front Repair Estimate</a>, AND<br>
+      <a href="https://dtpa.github.io/lawsuit/receipts/Estimate_Caliber_Collision_Repair_OCT2022_Rear_$2225.06.pdf" target="_blank">Caliber Collision Rear Repair Estimate</a>
+    <ul>
+    <li>October 7, 2022 </li>
+    <li>Front and rear damage repair estimates from Coliber Collision Onion Creek, a certified BMW repair facility.</li>
+    <li>This document provides proof that Black Forest Werkshop and Lee Rector repair their customer's vehicles with salvaged and broken/damaged replacement parts that hold no monetary value to individuals trying to get their vehicles repaired. Black Forest Werkshop charges customers for these salvage/junk parts with a 30% markup of whatever price they internally set as a basis. </li>
+    <li><b>This document can be used to help establish a basis for the body damage still in need of repair after retrieving my car from Black Forest Werkshop.</b></li>
+    </ul></li>
+    <br><br>
+
+<li><a href="https://dtpa.github.io/lawsuit/docs/statefarm-insurance-damage-repair-assesment-front-body-damage.pdf" target="_blank">StateFarm Insurance Company Damage/Repair Assesment - Front Body Damage</a>
+  <ul>
+  <li>Assessment/Estimate Date: 09/27/2021 12:33 PM </li>
+  <li>Assesment Location: StateFarm agent traveled to the repair shop to speak with the repair shop owner and physically assess the damage done to my vehicle in-person.</li>
+  <li>Total Rear Body Damage Assesment Amount: $3814.31</li>
+  <li>Amount of Insurance Payment Dispersed: $3564.31 ($3564.31 total esitmated damage - $250.00 deductible)</li>
+  <li>Insurance Payment Received By: Jaden Riley</li>
+  <li>Insurance Payment Received On:10/02/2021</li>
+  <li>Related StateFarm Insurance Claim Number: 53-25B5-72W1 (Uninsured Motorist Property Damage Claim for the incident that occured on 09/16/2021)</li>
+  </ul></li>
+  <br><br>
+<li><a href="https://dtpa.github.io/lawsuit/docs/statefarm-insurance-damage-repair-assesment-rear-body-damage.pdf" target="_blank">StateFarm Insurance Company Damage/Repair Assesment - Rear Body Damage</a>
+  <ul>
+  <li>Assessment/Estimate Date: 09/27/2021 12:33 PM </li>
+  <li>Assesment Location: StateFarm agent traveled to the repair shop to speak with the repair shop owner and physically assess the damage done to my vehicle in-person.</li>
+  <li>Total Rear Body Damage Assesment Amount: $865.04</li>
+  <li>Amount of Insurance Payment Dispersed: $365.04 ($865.04 total esitmated damage - $500.00 deductible)</li>
+  <li>Insurance Payment Received By: Jaden Riley</li>
+  <li>Insurance Payment Received On:09/30/2021</li>
+ <li>Related StateFarm Insurance Claim Number: 53-24H4-39B1 (Auto Collision Claim for the incident that occured on 08/23/2021)</li>
+  </ul></li>
+  <br><br>
+<li><a href="https://dtpa.github.io/lawsuit/docs/statefarm-insurance-supplemental-payment.pdf" target="_blank">StateFarm Insurance Company Supplemental Payment - Front Body Damage</a>
+  <ul>
+  <li>Assessment/Estimate Date: 11/02/2021 08:31 AM </li>
+  <li>Assesment Location: StateFarm agent traveled to the repair shop a second time to speak with the repair shop owner and physically re-assess the damage done to my vehicle in-person.</li>
+  <li>Total Rear Body Damage Assesment *Supplemental* Amount: $415.16</li>
+  <li>Amount of Insurance Payment Dispersed: $415.16</li>
+  <li>Insurance Payment Received By: Black Forest Werkshop</li>
+  <li>Insurance Payment Received On:11/07/2021</li>
+  <li>Related StateFarm Insurance Claim Number: 53-24H4-39B1 (Auto Collision Claim for the incident that occured on 08/23/2021)</li>
+  </ul></li>
+  <br><br>
+<li><a href="https://dtpa.github.io/lawsuit/docs/statefarm-insurance-rental-car-payment-01.pdf" target="_blank">StateFarm Insurance Company Rental Car Payment #1</a>
+  <ul>
+  <li>Rental Car Timeframe: 09/25/2021 through 10/30/2021 (rental car billed for 36 days of usage)</li>
+  <li>Insurance Rental Reimbursement Payment Issued On: 11/02/2021</li>
+  <li>Payment Amount: $1147.12</li>
+  <li>Insurance Rental Reimbursement Paid To: Enterprise Rent-a-Car</li>
+  <li>Related StateFarm Insurance Claim Number: 53-24H4-39B1 (Auto Collision Claim for the incident that occured on 08/23/2021)</li>
+  </ul></li>
+  <br><br>
+<li><a href="https://dtpa.github.io/lawsuit/docs/statefarm-insurance-rental-car-payment-02.pdf" target="_blank">StateFarm Insurance Company Rental Car Payment #2</a>
+  <ul>
+  <li>Rental Car Timeframe: 10/30/2021 through 12/17/2021 (rental car billed for 49 days of usage)</li>
+  <li>Insurance Rental Reimbursement Payment Issued On: 12/26/2021</li>
+  <li>Payment Amount: $1748.79</li>
+  <li>Insurance Rental Reimbursement Paid To: Enterprise Rent-a-Car</li>
+  <li>Related StateFarm Insurance Claim Number: 53-25B5-72W1 (Uninsured Motorist Property Damage Claim for the incident that occured on 09/16/2021)</li>
+  </ul></li>
+  <br><br>
+<li><a href="https://dtpa.github.io/lawsuit/docs/black-forest-werkshop-final-invoice-dec17-2021.pdf" target="_blank">Black Forest Werkshop Final Invoice</a>
+   <ul>
+  <li>Paid To: Black Forest Werkshop</li>
+  <li>Vehicle at Repair Shop: 09/25/2021 to 12/17/2021 (84 Days)</li>
+  <li>Money Requested from me by the Repair Shop: <b>$825</b> / <b>$2051.16</b> (check presented to repair shop <a href="https://dtpa.github.io/lawsuit/photos/BlackForestCheck103.jpg" target="_blank">IMAGE A</a> & <a href="https://dtpa.github.io/lawsuit/photos/BlackForestCheck103-ZoomedIn.PNG" target="_blank">IMAGE B</a>) / <b>$2268.46</b> </li>
+  <li>Money Received by Repair Shop: $415.16 (Direct Payment from StateFarm Insurance); $2051.16 (Cancelled check from customer, Jaden Riley) </li>
+  </ul></li>
+  <br><br>
+</ul>
+
+<p><br></p>
+<center><a href="#top"><img src="https://dtpa.github.io/lawsuit/site/back-to-top-simple.png" width="60px" alt="back to top"></a></center>
+<h2><a name="email">Section H: Email</a></h2>
+
+<ul class="email">
+<li><a href="https://dtpa.github.io/lawsuit/email/00-Email-History-Compiled.pdf" target="_blank">Compiled Email History</a><br>
+    A compilation of all three of the email chains listed below, eleven messages, in one document for easy review. 
+</li>
+  <ol><br>
+   <li>Lack of Progress on Your BMW
+    <ul>
+      <li><a href="https://dtpa.github.io/lawsuit/email/A1-Lack of Progress on Your BMW Repair 01-Nov_09-2021_1040.pdf" target="_blank">1st email</a></li>
+      <li><a href="https://dtpa.github.io/lawsuit/email/A2-Lack of Progress on Your BMW Repair 02-Nov_12-2021_1440.pdf" target="_blank">2nd email</a></li>
+      <li><a href="https://dtpa.github.io/lawsuit/email/A3-Lack of Progress on Your BMW Repair 03-Nov_12-2021_1710.pdf" target="_blank">3rd email</a></li>
+    </li></ul><br>
+<li>Your BMW
+    <ul>
+        <li><a href="https://dtpa.github.io/lawsuit/email/B1-Your BMW-01-Nov17_2021_1644.pdf" target="_blank">1st email</a></li>
+        <li><a href="https://dtpa.github.io/lawsuit/email/B2-Your BMW-02-Nov18_2021_0756.pdf" target="_blank">2nd email</a></li>
+        <li><a href="https://dtpa.github.io/lawsuit/email/B3-Your BMW-03-Nov29_2021_1134.pdf" target="_blank">3rd email</a></li>
+        <li><a href="https://dtpa.github.io/lawsuit/email/B4-Your BMW-04-Nov29_2021_1447.pdf" target="_blank">4th email</a></li>
+        <li><a href="https://dtpa.github.io/lawsuit/email/B5-Your BMW-05-Dec01_2021_1221.pdf" target="_blank">5th email</a></li>
+        <li><a href="https://dtpa.github.io/lawsuit/email/B6-Your BMW-06-Dec01_2021_1608.pdf" target="_blank">6th email</a></li>
+    </li></ul><br>
+<li>Check Returned
+<ul>
+<li><a href="https://dtpa.github.io/lawsuit/email/C1-Check Returned-01-Dec30_2021_1205.pdf" target="_blank">1st email</a></li>
+<li><a href="https://dtpa.github.io/lawsuit/email/C2-Check Returned-02-Jan03_2021_1109.pdf" target="_blank">2nd email</a></li>
+</ol>
+</ul>
+</ul>
+
+<center>
+<div class="lastemail">
+
+  <b>
+<p>Clip from my last communication with Lee Rector, <a href="https://dtpa.github.io/lawsuit/email/C2-Check Returned-02-Jan03_2021_1109.pdf" target="_blank">"Check Returned" 2nd email</a> 01/03/2022.</p>
+ <i></b>
+
+<p>Lee, ...</p>
+
+<p>I have some questions and concerns regarding multiple aspects of this business transaction. I will be taking some time to seek guidance from objective professionals who are more knowledgeable than me on the most appropriate next steps for me to take on how to justly and amicably conclude our business arrangement.</p>
+
+<p>Because I am soliciting others for guidance and advice, I must allow an appropriate amount of time and flexibility for correspondence to occur. You will receive additional information regarding my decision to proceed no later than the close of business on Monday, February 28, 2022, which is 60 days from 12/30/2021, the date you emailed me regarding my declined payment.</p> 
+
+<p>I will not reply to further communications, contact you again, or remit any payment before receiving the clarity and guidance I seek from knowledgeable and objective resources or before the close of business on Monday, February 28, 2022, whichever comes first.</p> 
+
+<p>Regards, Jaden Riley</p> 
+</i>
+</div></center>
+
+<p><br></p>
+<center><a href="#top"><img src="https://dtpa.github.io/lawsuit/site/back-to-top-simple.png" width="60px" alt="back to top"></a></center>
+<h2><a name="phone">Section I: People, Organizations, Phone Records</a></h2>
+
+<h3>People Referenced on this Website</h3>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Organization</th>
+    <th>Role</th>
+  </tr>
+  <tr>
+    <td>Jaden Riley</td>
+    <td>N/A</td>
+    <td>Person who reported the fraud, builder of this site, Black Forest Werkshop Customer</td>
+  </tr>
+  <tr>
+    <td>Lee Rector</td>
+    <td>Black Forest Werkshop</td>
+    <td>Owner</td>
+  </tr>
+  <tr>
+    <td>Josh</td>
+    <td>Black Forest Werkshop</td>
+    <td>Administrator</td>
+  </tr>
+  <tr>
+    <td>Jonathan</td>
+    <td>Black Forest Werkshop</td>
+    <td>Mechanic/Technician</td>
+  </tr>
+  <tr>
+    <td>Guillermo</td>
+    <td>Black Forest Werkshop</td>
+    <td>Body Repair</td>
+  </tr>
+  <tr>
+    <td>Russell</td>
+    <td>Black Forest Werkshop</td>
+    <td>Salvage Dealer</td>
+  </tr>
+  <tr>
+    <td>Mike</td>
+    <td>Black Forest Werkshop</td>
+    <td>Customer</td>
+  </tr>
+  <tr>
+    <td>Kelly Jo Sill</td>
+    <td>StateFarm Insurance</td>
+    <td>Claims Agent, Special Investigation Unit</td>
+  </tr>
+  <tr>
+    <td>Various Claims Agents</td>
+    <td>StateFarm Insurance</td>
+    <td>Everytime I called StateFarm I spoke with a different person</td>
+  </tr>
+  <tr>
+    <td>Various Rental Car Agents</td>
+    <td>Enterprise Rent-a-Car</td>
+    <td>Everytime I met/spoke with an Enterprise agent it was a different person</td>
+  </tr>
+  <tr>
+    <td>Beza Hailemariam</td>
+    <td>Bristol-West Insurance</td>
+    <td>Claims Agent</td>
+  </tr>
+  <tr>
+    <td>Tiffany Swait</td>
+    <td>Bristol-West Insurance</td>
+    <td>Claims Agent</td>
+  </tr>
+  <tr>
+    <td>Unknown APD Officer (<a href="#police1">&#8224;</a>) (<a href="#police2">&#8225;</a>)</td>
+    <td>Austin Police Department</td>
+    <td>Evening patrol of Murchison Middle School (12/16/21)</td>
+  </tr>
+  </table>
+
+
+<h3>Relevant Phone Numbers</h3>
+<table>
+  <tr>
+    <th>Contact</th>
+    <th>Number</th>
+    <th>Misc Information</th>
+  </tr>
+  <tr>
+    <td>Black Forest Werkshop</td>
+    <td>512-300-2697</td>
+    <td>Incident #1 Auto Collision StateFarm Claim #53-24H4-39B<br><br>Incident #2 Uninsured Motorist, StateFarm Claim #53-25B5-72W</td>
+  </tr>
+  <tr>
+    <td>Black Forest Werkshop</td>
+    <td>512-275-0195</td>
+    <td>Incident #1 Auto Collision StateFarm Claim #53-24H4-39B<br><br>Incident #2 Uninsured Motorist, StateFarm Claim #53-25B5-72W</td>
+  </tr>
+  <tr>
+    <td>StateFarm Insurance Company</td>
+    <td>855-341-8184</td>
+    <td>Incident #1 Auto Collision StateFarm Claim #53-24H4-39B<br><br>Incident #2 Uninsured Motorist, StateFarm Claim #53-25B5-72W</td>
+  </tr>
+  <tr>
+    <td>StateFarm Insurance Company</td>
+    <td>512-444-9671</td>
+    <td>Incident #1 Auto Collision StateFarm Claim #53-24H4-39B<br><br>Incident #2 Uninsured Motorist, StateFarm Claim #53-25B5-72W</td>
+  </tr>
+  <tr>
+    <td>StateFarm Insurance Company</td>
+    <td>844-458-4300</td>
+    <td>Incident #1 Auto Collision StateFarm Claim #53-24H4-39B<br><br>Incident #2 Uninsured Motorist, StateFarm Claim #53-25B5-72W</td>
+  </tr>
+  <tr>
+    <td>StateFarm Insurance Company</td>
+    <td>309-994-3159</td>
+    <td>Kelly Jo Sill, Claims Special Investigation Unit<br><br>*NOT* direclty affiliated with claims #53-24H4-39B & #53-25B5-72W</td>
+  </tr>
+  <tr>
+    <td>Enterprise Rent-a-Car</td>
+    <td>512-459-8100</td>
+    <td>Incident #1 Auto Collision StateFarm Claim #53-24H4-39B<br><br>Incident #2 Uninsured Motorist, StateFarm Claim #53-25B5-72W</td>
+  </tr>
+   <tr>
+    <td>Enterprise Rent-a-Car</td>
+    <td>512-459-0065</td>
+    <td>Incident #1 Auto Collision StateFarm Claim #53-24H4-39B<br><br>Incident #2 Uninsured Motorist, StateFarm Claim #53-25B5-72W</td>
+  </tr>
+    <tr>
+    <td>Enterprise Rent-a-Car</td>
+    <td>855-266-9565</td>
+    <td>Incident #1 Auto Collision StateFarm Claim #53-24H4-39B<br><br>Incident #2 Uninsured Motorist, StateFarm Claim #53-25B5-72W</td>
+  </tr> 
+  <tr>
+    <td>Bristol-West Insurance Company</td>
+    <td>800-274-7865</td>
+    <td>Incident #1 Auto Collision StateFarm Claim #53-24H4-39B<br><br>Also Incident #1 Bristol-West Claim #7003350425-1 (the other claimant's insurance company) Claims Dept.</td>
+  </tr> 
+  <tr>
+    <td>Bristol-West Insurance Company</td>
+    <td>972-633-6128</td>
+    <td>Incident #1 Auto Collision StateFarm Claim #53-24H4-39B<br><br>Also Incident #1 Bristol-West Claim #7003350425-1 (the other claimant's insurance company) Agent: Beza Hailemariam</td>
+  </tr> 
+  <tr>
+    <td>Bristol-West Insurance Company</td>
+    <td>972-633-6128</td>
+    <td>Incident #1 Auto Collision StateFarm Claim #53-24H4-39B<br><br>Also Incident #1 Bristol-West Claim #7003350425-1 (the other claimant's insurance company) Agent: Tiffany Swait</td>
+  </tr> 
+  <tr>
+    <td>City of Austin Police Department (<a href="#police1">&#8224;</a>) (<a href="#police2">&#8225;</a>)</td>
+    <td>512-974-2000</td>
+    <td>I was concerned that I would not get my car back without some sort of con, bullying, extortion or upheaval. I reached out to the police for help. (<a href="#police1">&#8224;</a>) (<a href="#police2">&#8225;</a>)</td>
+  </tr> 
+</table>
+
+
+
+<h3><a name="phonehistory"></span>Phone Bills with Detailed History</a></h3>
+
+<ul>
+<li><a href="https://dtpa.github.io/lawsuit/docs/phone-bill-oct2021.pdf" target="_blank">Oct. 2021</a> </li>
+<li><a href="https://dtpa.github.io/lawsuit/docs/phone-bill-nov2021.pdf" target="_blank">Nov. 2021</a> </li>
+<li><a href="https://dtpa.github.io/lawsuit/docs/phone-bill-dec2021.pdf" target="_blank">Dec. 2021</a> </li>
+<li><a href="https://dtpa.github.io/lawsuit/docs/phone-bill-jan2022.pdf" target="_blank">Jan. 2022</a> </li>
+</ul>
+
+<table>
+    <tr>
+        <th>Correspondance With</td>
+        <th>Oct. 2021</th>
+        <th>Nov. 2021</th>
+        <th>Dec. 2021</th>
+        <th>Jan. 2022</th>
+        <th>TOTALS</th>
+    </tr>
+    <tr>
+        <td>Black Forest Werkshop</td>
+        <td>03 calls</td>
+        <td>00 calls</td>
+        <td>13 calls</td>
+        <td>02 calls</td>
+        <td>18 calls with Black Forest Werkshop</td>
+    </tr>
+    <tr>
+        <td>StateFarm Insurance</td>
+        <td>13 calls</td>
+        <td>05 calls</td>
+        <td>30 calls</td>
+        <td>14 calls</td>
+        <td>62 calls with StateFarm</td>
+    </tr>
+    <tr>
+        <td>Bristol-West Insurance</td>
+        <td>00 calls</td>
+        <td>00 calls</td>
+        <td>06 calls</td>
+        <td>01 calls</td>
+        <td>07 calls with Bristol-West</td>
+    </tr>
+    <tr>
+        <td>Enterprise Rent-A-Car</td>
+        <td>07 calls</td>
+        <td>00 calls</td>
+        <td>11 calls</td>
+        <td>00 calls</td>
+        <td>18 calls Enterprise-Rent-a-Car</td>
+    </tr>
+    <tr>
+        <td>Austin Non-Emergency Police Department (<a href="#police1">&#8224;</a>) (<a href="#police2">&#8225;</a>)</td>
+        <td>00 calls</td>
+        <td>00 calls</td>
+        <td>01 calls</td>
+        <td>00 calls</td>
+        <td>01 calls with Austin Police Department</td>
+    </tr>
+    <tr>
+        <th>TOTALS</th>
+        <th>23 calls</th>
+        <th>05 calls</th>
+        <th>61 calls</th>
+        <th>17 calls</th>
+        <th>106 calls calls total</th>
+    </tr>
+</table>
+<p><a name="police2">&#8225;</a> = <i>I wasn't sure what to expect when picking up my car at Black Forest Werkshop and I called the City of Austin non-emergency police contact number on Dec. 16, 2021 to see if I could get a police escort to come with me to pick up my vehicle. The agent on the phone said my concerns sounded more like civil matters rather than active crime and therefore law enforcement could not/would not be dispatched to assist me. A few minutes after ending this call I met a police officer who was driving around Murchison Middle School (Austin, Texas) on night patrol (Dec. 16, 2021 ~08:00 PM). We talked for close to an hour. The officer I spoke with also advised me that law enforcement would not be able to assist me by escorting me to the repair shot to pick up my vehicle because it seemed more of a civil than an active criminal matter.</i>(<a href="#police1">&#8224;</a>) (<a href="#police2">&#8225;</a>)</p>
+  
+    
+<p><br></p>
+<center><a href="#top"><img src="https://dtpa.github.io/lawsuit/site/back-to-top-simple.png" width="60px" alt="back to top"></a></center>
+<h2><a name="criminaljustice">Section J: Criminal Justice Pursuit</a></h2>
+
+<h3>Criminal Insurance Fraud Claims Submitted Online</h3>
+  <ul>
+    <li>National Insurance Crime Bureau | Submitted: 01/16/2021 | Report Number: 143817218</li>
+    <li>Texas Office of the Attorney General | Submitted: 01/16/2021 | <a href="https://dtpa.github.io/lawsuit/docs/texas-attorney-general-fraud-complaint-received.pdf" target="_blank">Complaint number: CGS-313672</a></li>
+    <li>Federal Trade Commision | Submitted: 01/18/2021 | <a href="https://dtpa.github.io/lawsuit/docs/federal-trade-commission-fraud-complaint-received.pdf" target="_blank">Report Number: 143817218</a></li>
+</ul>
+
+
+<p><br><p>
+<center><a href="#top"><img src="https://dtpa.github.io/lawsuit/site/back-to-top-simple.png" width="60px" alt="back to top"></a></center>
+<h2><a name="civiljustice">Section K: Civil Justice Pursuit</a></h2>
+
+<h3>Pre-DTPA Legal Action</h3>
+
+<ul>
+  <li><b>Lawyer</b> • Jessica Zaboroski
+    <ul>
+    <li>January 25, 2022 12:01 PM (email)</li>
+    <li>January 26, 2022 1:12 PM (email)</li>
+    <li>February 3, 2022 4:08 PM (email)</li>
+    <li>February 9, 2022 1:49 PM (email)</li>
+    <li>Phone calls and text messages not captured in the timeline with Jessica Zaboroski.</li>
+    </ul></li>
+  <li><b>Lawyer</b> • John Swanson
+      <ul>
+      <li>May 20, 2022 12:00 PM (phone)</li>
+      <li>May 27, 2022 6:00 PM (phone)</li>
+      <li>May 31, 2022 8:48 AM (email)</li>
+      <li>May 31, 2022 1:05 PM (email)</li>
+      <li>May 31, 2022 5:20 PM (phone)</li>
+      <li>June 3, 2022 12:23 PM (email)</li>
+      <li>June 7, 2022 2:40 PM (phone)</li>
+      <li>June 10, 2022 3:30 PM (phone)</li>
+      </ul></li>
+  <li><b>Lawyer</b> • Mark Kelly
+      <ul>
+      <li>June 10, 2022 12:00 PM (phone)</li>
+      </ul></li>
+  <li><b>Lawyer</b> • Al Lazarus
+      <ul>
+      <li>Monday, June 13, 2022 11:00 AM (phone)</li>
+      </ul></li>
+  <li><b>Lawyer</b> • Laurie Ackerman
+      <ul>
+      <li>Tuesday, June 14, 2022 4:15 PM (phone)</li>
+      <li>Tuesday, June 21, 2022 1:00 PM (phone)</li>
+      </ul></li>
+  </ul>
+
+
+<ul>
+<li><a href="https://dtpa.github.io/lawsuit/docs/demand-letter-initial-pre-dtpa-june2022.pdf" target="_blank"><b>Initial Demand Letter</b>  Pre-DTPA Lawsuit (PDF)<br>
+<img src="https://dtpa.github.io/lawsuit/photos/initial-demand-letter-thumbnail.jpg"></a> 
+	<ul><li>USPS Certified Mail Tracking: <a href="https://tools.usps.com/go/TrackConfirmAction?tRef=fullpage&tLc=2&text28777=&tLabels=9171969009350278625216%2C&tABt=false"target="_blank">9171969009350278625216</a></li>
+    <li>Delivered: June 13, 2022 at 11:09 AM<br>
+  <img src="https://dtpa.github.io/lawsuit/photos/usps-certified-tracking-delivered.jpg"></li></ul>
+</ul>
+
+<h3>DTPA Legal Action</h3>
+
+<ul>
+  <li><b>Lawyer</b> • Mark LaSpina
+      <ul>
+      <li>June 28, 2022 5:00 PM</li>
+      </ul></li>
+  <li><b>Lawyer</b> • Andrew Stasio
+      <ul>
+      <li>July 1, 2022 4:30 PM</li>
+      </ul></li>
+  <li><b>Lawyer</b> • Jessica Zaboroski
+        <ul>
+        <li>July 21, 2022 5:37 PM</li>
+        <li>July 22, 2022 1:32 PM</li>
+        <li>July 22, 2022 4:47 PM</li>
+        <li>August 3, 2022 1:31 PM</li>
+        </ul></li>
+  <li><b>Lawyer</b> • Roy O. Smithers
+          <ul>
+          <li>August 4, 2022 2:56 PM</li>
+          <li>August 4, 2022 2:57 PM</li>
+          </ul></li>
+  <li><b>Lawyer</b> • Jon Michael Smith
+        <ul>
+        <li>August 5, 2022 2:13 PM</li>
+        </ul></li>
+  <li><b>Lawyer</b> • Brent Devere
+          <ul>
+          <li>August 9, 2022 9:52 PM</li>
+          <li>August 9, 2022 1:15 PM</li>
+          <li>August 13, 2022 Multiple</li>
+          <li>August 15, 2022 Multiple</li>
+          <li>August 18, 2022 1:06 PM</li>
+          <li>August 19, 2022 3:36 PM</li>
+          <li>August 20, 2022 Multiple</li>
+          <li>August 21, 2022 Multiple</li>
+          </ul></li>
+ <li><b>Lawyer</b> • Mark LaSpina
+          <ul>
+          <li>June 28, 2022 6:21 PM</li>
+          <li>August 22, 2022 Multiple</li>
+          <li>August 23, 2022 2:50 PM</li>
+          <li>August 24, 2022 6:41 PM</li>
+          <li>August 25, 2022 Multiple</li>
+          </ul></li>
+  <li><b>Lawyer</b> • Patrick Sipe
+          <ul>
+          <li>August 29, 2022</li>
+          </ul></li>
+  </ul>
+
+  <h3>Small Claims Court</h3>
+
+  <ul>
+    <li><a href="https://dtpa.github.io/lawsuit/smallclaims/05_Jul_2022_2235-Filing-Submitted-Envelope-66038883.pdf" target="_blank"><b>Small Claims Filing Submitted</b> July 05, 2022 - DTPA Lawsuit (PDF)<br>
+      <img src="https://dtpa.github.io/lawsuit/photos/smallclaims-filing-submitted-thumbnail.jpg"></a> 
+  </ul>
+
+  <ul>
+    <li><a href="https://dtpa.github.io/lawsuit/smallclaims/05_Jul_2022_2235-Small-Claims-Petition-Case-J5_CV_22_263457.pdf" target="_blank"><b>Small Claims Petition Generated</b> July 05, 2022 - DTPA Lawsuit (PDF)<br>
+      <img src="https://dtpa.github.io/lawsuit/photos/small-claims-petition-thumbnail.jpg"></a>
+  </ul>
+
+  <ul>
+    <li><a href="https://dtpa.github.io/lawsuit/smallclaims/06_Jul_2022_0823-Filing-Accepted-Envelope-66038883-Case J5_CV_22_263457.pdf" target="_blank"><b>Small Claims Filing Accepted</b> July 06, 2022 - DTPA Lawsuit (PDF)<br>
+      <img src="https://dtpa.github.io/lawsuit/photos/smallclaims-filing-accepted-thumbnail.jpg"></a> 
+  </ul>
+
+  <ul>
+    <li><a href="https://dtpa.github.io/lawsuit/smallclaims/07_Jul__2022_1318-Civil-Justice-Citation-Served-by-County-Sheriff.pdf" target="_blank"><b>Original Citation Delivered</b> July 07, 2022 - DTPA Lawsuit (PDF)<br>
+      <img src="https://dtpa.github.io/lawsuit/photos/smallclaims-citation-thumbnail.jpg"><br>
+      <img src="https://dtpa.github.io/lawsuit/photos/smallclaims-citation-thumbnail-2.jpg"></a>
+  </ul>
+
+  <ul>
+    <li><a href="https://dtpa.github.io/lawsuit/smallclaims/21_Jul_2022_1013-Email-Response-Received-About-Issued-Original-Citation.pdf" target="_blank"><b>Original Citation Response Received</b> July 21, 2022 - DTPA Lawsuit (PDF)<br>
+      <img src="https://dtpa.github.io/lawsuit/photos/smallclaims-citation-response-received-thumbmail.jpg"></a>
+  </ul>
+
+  <ul>
+    <li><a href="https://dtpa.github.io/lawsuit/smallclaims/21_Jul_2022_1013-Counterclaim-Issued-In-Response-to-Original-Citation.pdf" target="_blank"><b>Counterclaim Issued in Response to Original Citation</b> July 21, 2022 - DTPA Lawsuit (PDF)<br>
+      <img src="https://dtpa.github.io/lawsuit/photos/smallclaims-counterclaim-thumbmail-2.jpg"></a>
+  </ul>
+
+
+
+<p><br><p>
+<center><a href="#top"><img src="https://dtpa.github.io/lawsuit/site/back-to-top-simple.png" width="60px" alt="back to top"></a></center>
+
+<h2><a name="damages">Section L: Damage Calculations</a></h2>
+
+
+<h3>Economic Damages: Actual and Itemized</h3>
+
+<table>
+  <tr><td><a href="https://dtpa.github.io/lawsuit/receipts/Receipt_Car_Rental_NOV2021_$1147.12.pdf" target="_blank">Receipt: Car Rental NOV2021</a></td><td><span id="mark">$1,147.12</span></td></tr>
+  <tr><td><a href="https://dtpa.github.io/lawsuit/receipts/Receipt_Car_Rental_DEC2021_$1748.79.pdf" target="_blank">Receipt: Car Rental DEC2021</a></td><td><span id="mark">$1,748.79</span></td></tr>
+  <tr><td><a href="https://dtpa.github.io/lawsuit/receipts/Receipt_Car_Rental_SEP2022_$186.23.pdf" target="_blank">Receipt:  Car Rental SEP2022</a></td><td><span id="mark">$186.23</span></td></tr>
+  <tr><td><a href="https://dtpa.github.io/lawsuit/receipts/Receipt_Lyft_RideShares_$143.39.pdf" target="_blank">Receipt: RideShare Services</a></td><td><span id="mark">$143.39</span></td></tr>
+  <tr><td><a href="https://dtpa.github.io/lawsuit/receipts/Receipt_Legal_Services_APR2022-OCT2022_$1392.30.pdf" target="_blank">Receipt: Legal Services APR2022-OCT2022</a></td><td><span id="mark">$1,392.30</span></td></tr>
+  <tr><td><a href="https://dtpa.github.io/lawsuit/receipts/Receipt_Legal_Services_SEP2022_$3000.00.pdf" target="_blank">Receipt: Legal Services SEP2022</a></td><td><span id="mark">$3,000.00</span></td></tr>
+  <tr><td><a href="https://dtpa.github.io/lawsuit/receipts/Receipt_Certified_Demand_Letter_Fees_$17.18.pdf" target="_blank">Receipt: Certified Demand Letter Fees</a></td><td><span id="mark">$17.18</span></td></tr>
+  <tr><td><a href="https://dtpa.github.io/lawsuit/receipts/Receipt_EFileTexas.gov_$328.36.pdf" target="_blank">Receipt: EFileTexas.gov Small Claims Filing</a></td><td><span id="mark">$328.36</span></td></tr>
+  <tr><td>Missing Receipt: Car Cleaning/Detailing</td><td><span id="mark">$150.00</span></td></tr>
+  <tr><td><a href="https://dtpa.github.io/lawsuit/receipts/Receipt_Pre-Purchased_Replacement_Parts_$922.70.pdf" target="_blank">Receipt: Pre-Purchased Replacement Parts</a></td><td><span id="mark">$922.70</span></td></tr>
+  <tr><td><a href="https://dtpa.github.io/lawsuit/receipts/Receipt_Replacement_BMW_Floor_Mats_$286.17.pdf" target="_blank">Receipt: Replacement BMW Floor Mats</a></td><td><span id="mark">$286.17</span></td></tr>
+  <tr><td><a href="https://dtpa.github.io/lawsuit/receipts/Receipt_Car_Seat_Cover_$34.09.pdf" target="_blank">Receipt: Car Seat Cover $34.09.pdf</a></td><td><span id="mark">$34.09</span></td></tr>
+  <tr><td><a href="https://dtpa.github.io/lawsuit/receipts/Receipt_BMW_South_Austin_Diagnostics_$349.90.pdf" target="_blank">Receipt: BMW of South Austin Diagnostics</a></td><td><span id="mark">$349.90</span></td></tr>
+  <tr><td><a href="https://dtpa.github.io/lawsuit/receipts/Estimate_BMW_South_Austin_Repair_$12645.30.pdf" target="_blank">Estimate: BMW of South Austin Repair</a></td><td><span id="mark">$12,645.30</span></td></tr>
+  <tr><td><a href="https://dtpa.github.io/lawsuit/receipts/Estimate_Caliber_Collision_Repair_OCT2022_Front_$3769.72.pdf" target="_blank">Estimate: Caliber Collision Repair OCT2022 Front</a></td><td><span id="mark">$3,769.72</span></td></tr>
+  <tr><td><a href="https://dtpa.github.io/lawsuit/receipts/Estimate_Caliber_Collision_Repair_OCT2022_Rear_$2225.06.pdf" target="_blank">Estimate: Caliber Collision Repair OCT2022 Rear</a></td><td><span id="mark">$2,225.06</span></td></tr>
+  <tr><td>Personal Time Log (434 hours total at $73/hr)</a></td><td><span id="mark">$31,682.00</span></td></tr>
+  <tr><th><span id="important">TOTAL Economic Damages as of January 23, 2023</span></th><th><span id="important">$59,943.39</span></th></tr>
+
+</table><br>
+
+<p><br><p>
+<center><a href="#top"><img src="https://dtpa.github.io/lawsuit/site/back-to-top-simple.png" width="60px" alt="back to top"></a></center>
+
+<h2><a name="misc">Section M: Miscellaneous</a></h2>
+
+<ul>
+<li><a href="https://dtpa.github.io/lawsuit/docs/OEM Fog Light Price Quote.png" target="_blank">BMW of Austin OEM Fog Light Price Quote (image)</a></li>
+<li><a href="https://dtpa.github.io/lawsuit/docs/OEM Fog Light Price Quote Email from BMW of North Austin 23Feb23.pdf" target="_blank">BMW of North Austin OEM Fog Light Price Quote Email 23FEB23 (PDF)</a></li>
+<li><a href="https://dtpa.github.io/lawsuit/docs/OEM Common Parts Price Quotes Email from BMW of North Austin 23Feb23.pdf" target="_blank">BMW of North Austin OEM Common Parts for Repair Price Quote Email 23FEB23 (PDF)</a></li>
+</ul>
+
+
+<p></p><i>To be fair as possible, I billed my time out at the lowest of the three hourly rates noted in the repair estimates, which is $73/hr for paint labor, and this rate is consistent with my profession, as Senior Microsoft Cloud Architect. Furthermore, Lee Rector charges $60/day just to permit a customer's car to sit ideally in his lot, while I have been dealing with this issue for 419 days of my life, and from a position of Justice, my daily time, effort, and energy must certainly be considered a more valuable commodity than daily storage space in a parking lot (please see the <a href="https://dtpa.github.io/lawsuit/#timeline"><b>Timeline</b></a>). My time is just as valuable as the mechanic, painters, auto repair technicians, and lawyers. In truth, my time is more valuable because my time wasn't freely given or asked for; it was forced away from me. I should be compensated for my time in the exact same manner as is classified [my time is an Economic Damage] just as the other individuals who devoted time to this situation, and <u>my Total Economic Damages Amount should then be used to determine my Punitive Damages</u>. </i></p>
+<p><br></p>
+<center>
+<a href="https://dtpa.github.io/lawsuit/photos/Email-Clip-Re-Amended-Petiton-Damages-2022-10-10_200348.jpg" target="_blank">
+  <img src="https://dtpa.github.io/lawsuit/photos/Email-Clip-Re-Amended-Petiton-Damages-2022-10-10_200348.jpg" width="30%"></a>
+</center>
+
+<!--
+<a href="https://dtpa.github.io/lawsuit/time/Salary Data OCT2022 Senior Cloud Analyst.pdf" target="_blank">Salary Data October 2022: Senior Cloud Analyst </a></td><td>$75.00/hrm Median</td></tr><br>
+<a href="https://dtpa.github.io/lawsuit/time/Salary Data OCT2022 Senior Cloud Architect.pdf" target="_blank">Salary Data October 2022: Senior Cloud Architect </a></td><td>$75.00/hr Median</td></tr><br>
+<a href="https://dtpa.github.io/lawsuit/time/Salary Data OCT2022 Senior Cloud Engineer.pdf" target="_blank">Salary Data October 2022: Senior Cloud Engineer </a></td><td>$75.00/hr Median</td></tr><br>
+
+-->
+
+<center><a href="#top"><img src="https://dtpa.github.io/lawsuit/site/back-to-top-simple.png" width="60px" alt="back to top"></a></center>
+
+
+
+
+
+<p><br></p><br>
+
+
+<!-- Default Statcounter code for Black Forest DTPA Lawsuit
+https://dtpa.github.io/lawsuit/ -->
+<script type="text/javascript">
+    var sc_project=12776618; 
+    var sc_invisible=1; 
+    var sc_security="a0b764c7"; 
+    </script>
+    <script type="text/javascript"
+    src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics"
+    href="https://statcounter.com/" target="_blank"><img class="statcounter"
+    src="https://c.statcounter.com/12776618/0/a0b764c7/1/" alt="Web Analytics"
+    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+    <!-- End of Statcounter Code -->
