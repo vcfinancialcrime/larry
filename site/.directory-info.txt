@@ -1,0 +1,1 @@
+files saved in this directory are files used to build the site that contribute to site navigative and site aesthetics, but not site information content. There are other directories set up to hold content.
